@@ -22,8 +22,8 @@ title: CSCI 241 - Systems Programming - Fall 2022
 email: roberto.hoyle@oberlin.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Course syllabus for Systems Programming
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "cs241-fall2022/" # the subpath of your site, e.g. /blog
+url: "https://rjhoyle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rjhoyle
 github_username:  rjhoyle
 

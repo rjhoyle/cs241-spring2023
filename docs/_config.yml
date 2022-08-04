@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: CSCI 241 - Systems Programming - Fall 2022
+title: CSCI 241 - Systems Programming
 email: roberto.hoyle@oberlin.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Course syllabus for Systems Programming
@@ -29,6 +29,9 @@ github_username:  rjhoyle
 
 # Build settings
 theme: minima
+# remote_theme: pages-themes/merlot@0.2.0
+# remote_theme: pages-themes/midnight@v0.2.0
+# theme: merlot
 plugins:
   - jekyll-feed
 

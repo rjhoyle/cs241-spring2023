@@ -9,53 +9,47 @@ permalink: /calendar/
 ---
 
 
-Date | Topic | Reading
-| --- | --- | --- |
-**Week 1** ||
-Sep 01 | Introduction and Course Overview |
-**Week 2** ||
-Sep 06 | Introduction to UNIX and the shell | Read LCL, Chapters 1-3<br/>Run the vim and emacs tutorials
-Sep 08 | UNIX Commands | Read LCL, Chapters 4-8
-**Week 3** ||
-Sep 13 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sections 1.1, 1.3, 1.6, 1.7, 2.1, and 2.2<br /><a href="https://learngitbranching.js.org/">Interactive Git Tutorial</a>
-Sep 15 | Introduction to C and Compilation |
-**Week 4** ||
-Sep 20 | Makefiles | 
-Sep 22| Objects, Functions, and Types | 
+Date | Topic | Reading | HW
+| --- | --- | --- | --- |
+**Week 1** |||
+Sep 06 | Introduction and Course Overview ||
+Sep 08 | Introduction to UNIX and the shell | Read LCL, Chapters 1-3<br/>Run the vim and emacs tutorials|HW0|
+**Week 2** |||
+Sep 13 | UNIX Commands | Read LCL, Chapters 4-8||
+Sep 15 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sections 1.1, 1.3, 1.6, 1.7, 2.1, and 2.2<br /><a href="https://learngitbranching.js.org/">Interactive Git Tutorial</a>||
+**Week 3** |||
+Sep 20 | Introduction to C and Compilation ||HW1|
+Sep 22 | Makefiles | ||
+**Week 4** |||
+Sep 27| Objects, Functions, and Types | 
+Sep 29| Arithmetic Types | Dis Ch. 4.1 - 4.6
 **Week 5** ||
-Sep 27| Arithmetic Types | Dis Ch. 4.1 - 4.6
-Sep 29| Expressions and Operators | 
+Oct 04| Expressions and Operators | 
+Oct 06 | Control Flow | 
 **Week 6** ||
-Oct 04 | Control Flow | 
-Oct 06| Project Proposals | 
-**Week 7** ||
-Oct 11| Dynamically Allocated Memory |
-Oct 13| Characters and Strings |
+Oct 11| Project Proposals | 
+Oct 13| Dynamically Allocated Memory |
 **Fall Break** || 
+**Week 7** ||
+Oct 25| Characters and Strings |
+Oct 27| Input/Output |
 **Week 8** ||
-Oct 25| Input/Output |
-Oct 27| Preprocessor |
+Nov 01| Preprocessor |
+Nov 03| Program Structure | 
 **Week 9** ||
-Nov 01| Program Structure | 
-Nov 03 | Debugging, Testing, and Analysis | DiS Ch. 3.1 - 3.4
+Nov 08 | Debugging, Testing, and Analysis | DiS Ch. 3.1 - 3.4
+Nov 10| Self-referential Structures | 
 **Week 10** ||
-Nov 08| Self-referential Structures | 
-Nov 10| Advanced git | 
+Nov 15| Advanced git | 
+Nov 17| Compression | 
 **Week 11** ||
-Nov 15| Compression | 
-Nov 17| System Calls | 
+Nov 22| System Calls | 
+Nov 24 | **Thanksgiving Break**
 **Week 12** ||
-Nov 22 | Processes | 
-Nove 24 | **Thanksgiving Break**
+Nove 29 | Processes | 
+Dec 01| Interprocess Communication |
 **Week 13** ||
-Nov 29| Interprocess Communication |
-Dec 01 | Multithreaded Programming and OpenMP
-**Week 14** |
 Dec 06 | Virtual Memory
 Dec 08 | Open Source Software
-**Week 15** |
+**Week 14** |
 Dec 13 | Buffer Overflows | 
-
-Dec 06 | OpenMP
-Dec 06 | Code Optimization
-

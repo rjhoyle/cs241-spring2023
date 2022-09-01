@@ -7,107 +7,101 @@ title: Policies
 permalink: /policies/
 
 ---
+# Course Policy
 
-<h2>Grading</h2>
 
-<p>
-    Grades will be calculated based on the following distribution:
-</p>
-<ul>
-    <li><b>45%</b> - Homework/Projects</li>
-    <!-- 
-    <li><b>30%</b> - Exams (probably 2)</li>
-    <li><b>15%</b> - Skills Quizzes (probably 4 or 5, on Blackboard)</li>
-    -->
-    <li><b>20%</b> - Reading Quizzes (on Blackboard)</li>
-    <li><b>10%</b> - Class/Slack participation</li>
-    <li><b>25%</b> - Final project (not optional)</li>
-</ul>
-<p>
-    The distribution might be adjusted based on the progression of the course.
-</p>
+## Grading
 
-<h2>Course Policy</h2>
+Grades will be calculated based on the following distribution:
 
-<h3>Attendance</h3>
-<p>
-    Regular class attendance and participation is expected.  Please talk to me
-    if regular class attendance is going to be a problem.  Since we only have a short amount of time, class will start promptly 
-    at the scheduled start time.  If you are going to be habitually tardy due
-    to circumstances beyond your control, please let me know.
-</p>
+* <b>45%</b> - Homework/Projects
+* <b>20%</b> - Reading Quizzes (on Blackboard)
+* <b>10%</b> - Class/Slack participation
+* <b>25%</b> - Final project (not optional)
 
-<h3>Homework Assignments</h3>
-<p>
-    There will be a number of assignments made in this class.  I expect every
-    student to attempt each assignment and turn in the results.  You are
-    encouraged to complete every assignment as this is one of the most
-    effective ways to learn the material.
-</p>
-<p>
-  Assignments will be graded on a scale of:
-  <ul>
-    <li><b>S+</b> &mdash; Exceeded expectations</li>
-    <li><b>S</b> &mdash; Satisfactory.  All main components of the assignment completed</li>
-    <li><b>S-</b> &mdash; Program needs improvement, or not fully implemented</li>
-    <li><b>U</b> &mdash; Unsatisfactory.  Program does not compile, or major elements missing</li>
-  </ul>
-  To get a grade of <b>S+</b>, you'll need to do some of the extra credit sections on the assignments.  Doing the regular sections of the assignments correctly will get you a grade of <b>S</b>, which will translate to around a median grade for the semester.  If you want to get an A, you'll need to get some <b>S+</b> grades.
-</p>
-<p>
+The distribution might be adjusted based on the progression of the course.
+
+
+Students who abandon their groups and do not do work on the final project will automatically fail the class, regardless of the rest of their grade.
+
+## Attendance
+Regular class attendance and participation is expected.  Please talk to me
+if regular class attendance is going to be a problem.  Since we only have a short amount of time, class will start promptly 
+at the scheduled start time.  If you are going to be habitually tardy due
+to circumstances beyond your control, please let me know.
+
+Participation is 10 percent of your grade.
+
+## Homework Assignments
+There will be a number of assignments made in this class.  I expect every
+student to attempt each assignment and turn in the results.  You are
+encouraged to complete every assignment as this is one of the most
+effective ways to learn the material.
+
+Assignments will be graded on a scale of:
+* <b>S+</b> &mdash; Exceeded expectations
+* <b>S</b> &mdash; Satisfactory.  All main components of the assignment completed
+* <b>S-</b> &mdash; Program needs improvement, or not fully implemented
+* <b>U</b> &mdash; Unsatisfactory.  Program does not compile, or major elements missing
+
+To get a grade of <b>S+</b>, you'll need to do some of the extra credit sections on the assignments.  Doing the regular sections of the assignments correctly will get you a grade of <b>S</b>, which will translate to around a median grade for the semester.  If you want to get an A, you'll need to get some <b>S+</b> grades.
+
   Submitting assignments that do not compile, or are otherwise heavily broken, will result in an automatic grade of <b>U</b>.
-</p>
-<p>
-<!--
-    If you know that for some reason you will not be able to submit the
-    assignment before the deadline, you should contact me in advance of the
-    deadline.  Extensions are only granted in exceptional circumstances, but
-    need to be done in advance.
-    -->
-    You have 4 automatic extensions given to you during the semester which 
-    you can use for the homework assignments.  Please note, this is 4 extensions
-    for the entire semester, not for each assignment.  After these, the late penalty
-    will apply.  You are responsible for keeping track of the number of extensions
-    that you have used, I will not be keeping track for you.  If you exceed these
-    days, no further extensions will be provided, so please plan ahead.  Nothing
-    may be submitted past the last day of the semester at the end of reading period, without an Incomplete signed through the Dean's office.
-</p>
 
-<p>
+You have 4 automatic extensions given to you during the semester which 
+you can use for the homework assignments.  Please note, this is 4 extensions
+for the entire semester, not for each assignment.  After these, the late penalty
+will apply.  You are responsible for keeping track of the number of extensions
+that you have used, I will not be keeping track for you.  If you exceed these
+days, no further extensions will be provided, so please plan ahead.  Nothing
+may be submitted past the last day of the semester at the end of reading period, without an Incomplete signed through the Dean's office.
+
 <b>Late submissions of homework assignments will be penalized up to 10% per day. 
    Extra credit will not be accepted after the initial deadline.</b> 
-</p>
+
+## Reading Quizzes
+
+Reading quizzes will be posted and due before each class.  Each quiz will be due at the beginning of class time on the day listed on the calendar.  *No late quizzes will be accepted.*
+
+You have unlimited attempts to do the quizzes.
+
 <!-- 
 <p>
     <b>Late assignments will be penalized according to the following chart.</b>
     Extra credit will not be accepted after the initial deadline.
 </p>
 <ul>
-    <li><b>-10%</b> - within 12 hours of deadline</li>
-    <li><b>-20%</b> - within 24 hours</li>
-    <li><b>-40%</b> - within 48 hours</li>
-    <li><b>-60%</b> - within 72 hours</li>
+    <b>-10%</b> - within 12 hours of deadline
+    <b>-20%</b> - within 24 hours
+    <b>-40%</b> - within 48 hours
+    <b>-60%</b> - within 72 hours
 </ul>
 -->
 
-<h3>Accommodations for students with disabilities</h3>
-<p>
-If you have a <a href="http://www.oberlin.edu/learning/SSDmissionandservices.html">disability
-    that might impact your performance in this course, or requires special
-    accommodation</a>, please contact me as soon as possible so that
-    appropriate arrangements can be made.
-Support is available through <a href="http://www.oberlin.edu/SSS/">Student
-    Academic Services</a>, specifically <a href="http://www.oberlin.edu/learning/contact.html">Jane Boomer</a>.
-You will need to contact them to get your disability documented before
+## Accommodations for students with disabilities
+If you have a disability that might impact your performance in this course, or requires special accommodation, please contact me as soon as possible so that appropriate arrangements can be made.
+You will need to contact the 
+[Office of Disability Access](https://www.oberlin.edu/disability-access) to get your disability documented before
 accommodations can be made.
-</p>
 
-<p>
-  There is also support available through the Quantitative Skills Center, 
-  <a href="http://new.oberlin.edu/office/clear/for-students/drop-in-tutoring/">CLEAR</a>.
-  They have drop-in hours where you can ask for assistance on programming assignments from
-  other students who have experience.
-</p>
+There is also support available through the Quantitative Skills Center, 
+<a href="http://new.oberlin.edu/office/clear/for-students/drop-in-tutoring/">CLEAR</a>.
+They have drop-in hours where you can ask for assistance on programming assignments from
+other students who have experience.
+
+The Computer Science Department is committed to access in its broadest
+sense of the word. If you identify as a low-income student, and you are
+experiencing challenges with securing funds to purchase required materials
+for this course (books/clickers/a working laptop) you can apply for funding
+support through
+[ObieCares](https://www.oberlin.edu/dean-of-students/initiatives/obiecares)
+
+
+If you are a student who is not diagnosed with a disability but suspect you
+may have one, please reach out to
+(Accessibility Services)[https://www.oberlin.edu/accessibility-services] and choose the red button
+about half way down the page to schedule a 15 minute informational meeting
+with OSAS.
 
 ## Plagiarism and Academic Dishonesty
 
@@ -115,15 +109,11 @@ I have very low tolerance for academic dishonesty, and will vigorously
 pursue available remedies for any incidents.   All work in this class is to
 be performed according to the [Oberlin Honor Code](http://new.oberlin.edu/students/policies/11-Policies-Honor.pdf). Specifically I expect that:
 
-- Quizzes and exams will be closed book, closed notes, and <b>no</b>
-    communication between students.  This includes discussing the same
-    to students who are taking the quiz at another time.
 - Discussion of assignments is expected and encouraged, however all
     work and code on assignments should be your own without outside
     assistance.  Any assignments that allow you to collaborate in a group
     will be explicitly labeled as such.
-- If clickers are used in the class, then you may not use another student's
-    clicker to attempt to get them attendance points.
+- You may not use another student's clicker to attempt to get them attendance points.
 - Sources should be cited including the textbook and other web sites
     when you use them in your work.
 - You are not permitted to share your source code with other

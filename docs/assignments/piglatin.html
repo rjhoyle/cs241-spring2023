@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>CSCI 241 - Homework 5</title>
+<link rev="made" href="mailto:roberto.hoyle@oberlin.edu">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="homework.css">
+</head>
+
+
+<body>
+
+            <h1>CSCI 241 - Lab 5 : <br> C Strings</h1>
+<p>
+<em>Due by 11:59.59pm Wednesday, April 20</em>
+</p>
+
+<div class="boxed">
+<p>
+  The URL for this github repository is <a href="https://classroom.github.com/a/njrKScWE">https://classroom.github.com/a/njrKScWE</a>  If your partner is submitting an assignment, please submit one yourself, pointing at the partner's repository.
+</p>
+</div>
+
+
+        <h2>Introduction</h2>
+        <p>
+            For this assignment create a program <tt>pig</tt> that will read in
+            English text and translate it into Pig Latin. In particular you'll
+            be working with strings in C.
+
+        <div class="textbox">
+            I'm interested in seeing how much time students estimate an
+            assignment will take versus how much time they actually spend on
+            the assignment. What I'd like you to do is read through this
+            assignment and create a README with your estimated time to
+            complete it. (Feel free to list time for individual components
+            as well if you'd like.) After you get done, I'd like you to add
+            in the actual amount of time you spent.
+        </div>
+
+        <hr>
+
+        <h2>Programming Details</h2>
+        <p>
+            Pig Latin is used by both adults and children to obfuscate what they
+            are saying from the other. Some of you might have toyed around with
+            the language yourself as a child.
+        </p>
+
+        <h3>Translating Pig Latin</h3>
+        <p>
+            For this assignment, you'll be creating a programs <tt>pig</tt>. <tt>pig</tt> will read in English text and
+            convert it into pig latin. 
+				</p>
+        
+        <h3>Pig Latin Translation Rules</h3>
+        <p>
+             There are a couple of varying
+            rules to Pig Latin. For this assignment, we'll be using the
+            following:
+        </p>
+        <ol>
+            <li>
+                <p class="thick">Rule 1:</p> If the string begins with a vowel
+                (that is begins with 'a', 'e', 'i', 'o', or 'u') add "yay" to
+                the end of the string.
+            </li>
+            <li>
+                <p class="thick">Rule 2:</p> Otherwise, find the first occurance
+                of a vowel, then move all the letters before the vowel to the
+                end of the word and add "ay". <p class="thick">Note:</p> "y"
+                should be considered a vowel in this context.
+            </li>
+        </ol>
+        <p>
+            You can consider a word to be a consecutive sequence of letters
+            (A-Z, a-z). "y" should be treated as a consonant if it is the first
+            letter of the word but as a vowel otherwise.
+        </p>
+
+        <h3>Punctuation &amp; Grammar</h3>
+        <p>
+            In addition to modifying the words as specified above, your program
+            should also respect the following rules:
+        </p>
+        <ul>
+            <li>
+                Puntuation in sentences should be preserved (periods, commas
+                whitespace, tabs, etc.)
+            </li>
+            <li>
+                Capitalization should be preserved. The original capital letter
+                should be lowercased and the new initial letter should be
+                capitalized. So, Linux would become Inuxlay.
+            </li>
+            <li>
+                The letter pair "qu" together should be treated as a consonant,
+                rather than a single character.
+            </li>
+            <li>
+                Hypenated words should be treated as two words.
+            </li>
+        </ul>
+        <p>
+            Some dialects of pig latin say that you should move "silent" letters
+            to the end as well (such as in the word knife). You can ignore
+            contraction words (don't).
+        </p>
+        <h3>Examples</h3>
+        <p>
+            In general, the words will be translated as follows:</br>
+            Linux -> Inuxlay</br>
+</br>
+            yes -> esyay</br>
+            example -> exampleyay</br>
+        </p>
+
+        <hr>
+
+        <h2>Programming Notes</h2>
+        <p>
+            Some guidelines you should follow when working on your solution:
+        </p>
+        <ul>
+            <li>
+                No word we use in our testing will be longer than 100
+                characters.
+            </li>
+            <li>
+                <tt>strcpy</tt>, <tt>strcat</tt>, <tt>strdup</tt> are useful
+                functions for this assignment.
+            </li>
+        </ul>
+        <p>
+            You'll want to think about how to breaks this program into its
+            component parts.
+        </p>
+
+        <hr>
+
+        <h2>Command line arguments</h2>
+        <p>
+            Additionally, I'd like you to implement a <tt>-h</tt> and
+            <tt>-?</tt> flag that prints out a brief usage message and exits the
+            program with a non-zero value. You should do the same if an
+            unknown flag is passed to the program.
+        </p>
+        <p>
+            You should have your program's main function return 0 upon
+            successful completion of the assigned task.
+        </p>
+
+
+<!--- 
+><hr>
+<h2>Man page</h2>
+<p>
+    You'll also be creating a man page to accompany your tool.  Man pages are
+    simply text files that have some additional annotations with formatting
+    instructions -- somewhat similar to LaTeX if you've encountered that as
+    well.
+</p>
+
+<p>
+    Traditionally, the tool <tt>nroff</tt> was used to do typesetting of man
+    pages.  These days, many systems now have <tt>groff</tt> and just have
+    nroff as an alias to groff.  You can get more info on the various options by
+    seeing the manpage <tt>groff_man(7)</tt>.
+</p>
+
+<h3>Important nroff macros to know</h3>
+<p>
+    At a minimum, you will need to know the following macros (all go at the
+    start of the line).
+</p>
+<dl class="code">
+
+    <dt><tt>.\&quot;</tt>
+    <dd>designates a comment line.  There usually is a block of these at the top.
+
+    <dt><tt>.TH 
+        <em>&lt;name&gt;</em> 
+        <em>&lt;section&gt;</em> 
+        <em>&lt;center-footer&gt;</em> 
+        <em>&lt;left-footer&gt;</em>  
+        <em>&lt;center-header&gt;</em></tt>
+    <dd>Title Heading. Use this after the initial
+    block of comments at the start. It takes the following 5 arguments:
+    <ol class="padded">
+        <li><tt>name</tt> - name of the command or function</li>
+        <li><tt>section</tt> - section of the manual (1 for user commands)</li>
+        <li><tt>center-footer</tt> - date the page was last modified</li>
+        <li><tt>left-footer</tt> - use "CSCI 241" for man pages in this class</li>
+        <li><tt>center-header</tt> - this is the organization field, use
+        "Oberlin College" for this course</li>
+    </ol>
+
+    <dt><tt>.SH <em>text</em></tt>
+    <dd>A section header.  By convention these
+    should be in all caps.  Commonly used values are NAME, SYNOPSIS,
+    DESCRIPTION, OPTIONS, DIAGNOSTICS, AUTHOR, BUGS in that order. 
+
+    <dt><tt>.SS <em>text</em></tt>
+    <dd>A subheading.  By convention these should only have the initial letter caps. 
+
+    <dt><tt>.P</tt>
+    <dd>Start a new paragraph.  Each line of the paragraph needs to start in
+    column 1.
+
+    <dt><tt>.IP <em>text</em></tt>
+    <dd>An indented paragraph.  Very useful for describing options.
+
+    <dt><tt>.B <em>word</em></tt>
+    <dd>Bolds the following word
+
+    <dt><tt>.I <em>word</em></tt>
+    <dd>Italicizes the following word
+
+<!-- 
+    <ol class="padded">
+        <li><tt>name</tt> - name of the command or function</li>
+        <li><tt>section</tt> - section of the manual (1 for user commands)</li>
+        <li><tt>center-footer</tt> - date the page was last modified</li>
+        <li><tt>left-footer</tt> - use "CSCI 241" for man pages in this class</li>
+        <li><tt>center-header</tt> - this is the organization field, use
+        "Oberlin College" for this course</li>
+    </ol>
+    </li>
+    <li><tt>.SH <em>text</em></tt> - a section header.  By convention these
+    should be in all caps.  Commonly used values are NAME, SYNOPSIS,
+    DESCRIPTION, OPTIONS, DIAGNOSTICS, AUTHOR, BUGS in that order. </li>
+</dl>
+
+<h3>Sample manpage</h3>
+<p>
+</p>
+<pre class="boxed">
+.\" Sample man page for CSCI 241
+.\" Roberto Hoyle - Spring 2017
+
+.TH sample_man 1 "05 March 2017" "CSCI 241" "Oberlin College"
+
+.SH NAME
+.B sample_man
+\- an example of a sample man page
+
+.SH SYNOPSIS
+.B sample_man
+[ -o outputfile ]
+&lt;filename&gt;
+
+.SH DESCRIPTION
+Does everything a sample man page should do.
+
+.SH OPTIONS
+.IP "-o outputfile"
+Do things to be written to an output file.
+
+.SH AUTHOR
+Roberto Hoyle (Spring 2017)
+
+.SH BUGS
+None!
+</pre>
+
+<p>
+You can also see/download a <a href="sample_man_page.txt">longer version</a>.
+</p>
+
+<p>
+    You should name your file based on the standard convention
+    <tt>&lt;name_of_program&gt;.&lt;manual_section&gt;</tt>.  So for the above
+    page, it would be <tt>sample_man_page.1</tt>.  (Recall that section 1 is user
+    commands.)
+</p>
+
+<p>
+    To view the processed man page use either of the following commands:
+</p>
+<ul>
+    <li><tt>nroff -man sample_man.1 | less -is</tt></li>
+    <li><tt>groff -man -Tascii sample_man.1 | less -is</tt></li>
+</ul>
+
+<p>
+    Here is the HTML version of above:
+</p>
+<div class="boxed">
+<pre>
+sample_man(1)                   Oberlin College                  sample_man(1)
+
+<b>NAME</b>
+       <b>sample_man</b> - an example of a sample man page
+
+<b>SYNOPSIS</b>
+       <b>sample_man</b> [ -o outputfile ] &lt;filenames&gt;
+
+<b>DESCRIPTION</b>
+       Does everything a sample man page should do.
+
+<b>OPTIONS</b>
+       -o outputfile
+              Do things to be written to an output file.
+
+<b>AUTHOR</b>
+       Roberto Hoyle (Spring 2017)
+
+<b>BUGS</b>
+       None!
+
+CSCI 241                        05 March 2017                  sample_man(1)
+</pre>
+</div>
+
+
+-->
+        <hr>
+
+<h2>Extra Credit</h2>
+
+Implement other translations.  Check out <a href="http://www.rinkworks.com/dialect/">http://www.rinkworks.com/dialect/</a> and <a href="https://www.cs.utexas.edu/users/jbc/home/chef.html">https://www.cs.utexas.edu/users/jbc/home/chef.html</a> for inspiration.
+
+<h2>Handin</h2>
+
+<h3>README</h3>
+<p>
+    Create a file called <tt>README</tt> that contains
+</p>
+<ol>
+    <li>Your name and a description of the program</li>
+    <li>A listing of the files with a short one line description of the contents</li>
+    <li>Any known bugs or incomplete functions</li>
+    <li>Your estimated time from the start and the actual time taken</li>
+    <li>Your affirmation as to the honor code if you followed it</li>
+</ol>
+<p>
+    Now you should <tt>make clean</tt> to get rid of your executables and
+    handin your folder containing your source files, Makefile, and README through GitHub
+</p>
+
+<pre class="boxed">
+    % <tt>git add</tt>
+    % <tt>git commit</tt>
+    % <tt>git push</tt>
+</pre>
+	    <p>Remember, if you have issues with commits due to odd merges, it is easier to start over, clone into a new directory, and copy the files over before commiting and pushing.
+	    </p>
+	    <p>In addition, if you are working with a partner, you should do <tt>git pull</tt> periodically to pull their changes into your direction to avoid having to do a merge</p>
+
+<h2>Grading</h2>
+<p>
+    Here is what I am looking for in this assignment:
+</p>
+<ul class="padded">
+    <li>A working Makefile with your program, all, and clean as targets</li>
+
+    <li>Appropriately modular code</li>
+    
+    <li>Good comments</li>
+
+    <li>Programs which run under <tt>valgrind</tt> without errors</li>
+
+    <li>A statement about any valgrind errors which occur and that you could not
+    fix</li>
+
+    <li>A README with the information above.  The listing of known bugs is
+    important.</li>
+
+</ul>
+
+
+        <!-- Footer -->
+        <hr>
+        <footer>
+            <p class="small">Last Modified by Roberto Hoyle, April 2022. Based on material from Benjamin Kuperman and Nick Care</p>
+        </footer>
+
+
+
+</body>
+</html>
+
+<!-- vim: set fdm=marker tw=80: -->

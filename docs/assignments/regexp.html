@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+
+<title>CSCI 241 - Homework 2</title>
+<link rev="made" href="mailto:roberto.hoyle@oberlin.edu">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<link rel="stylesheet" type="text/css" href="../styles.css">
+
+<style type="text/css">
+<!-- 
+    #clear { background-color: yellow; }
+-->
+</style>
+
+</head>
+<body>
+
+<h1>CSCI 241 - Homework 2</h1>
+<p>
+  <em>Due by 11:59.59pm Sunday, October 31</em>
+</p>
+
+<p>The Github URL for this assignment is <a href="https://classroom.github.com/a/Wfp7NKUn">https://classroom.github.com/a/Wfp7NKUn</a></p>
+
+
+<p>
+    Give a command that will use a single <tt>egrep</tt> or <tt>grep -E</tt> on
+    <tt>/usr/share/dict/words.241</tt> to find the following.
+    Consider only a, e, i, o, and u as vowels for our purposes.
+
+    Put your answers in a file called <tt>README</tt>.
+</p>
+
+<p>
+You may want to review the lecture notes, the class readings, and possibly do an <a href="http://regexone.com">online tutorial</a> before beginning.  There are useful links for regex visualizers on the <a href="../resources">course home page</a>.
+</p>
+
+<p>
+    Protip: you can do <code style="color:green;">export WORDS=/usr/share/dict/words.241</code> and then use <code style="color:green;">$WORDS</code> as your input file.  Also, piping output to <code style="color:green;">wc -l</code> will let you count the lines output.
+</p>
+
+<ol class="padded">
+    <li>All words that contain exactly one lowercase vowel <i>(5948 on clyde)</i></li>
+    <!-- <li>All words that contain at least 5 vowels in a row</li> --> 
+    <li>All words that contain the lowercase vowels a, e, i, o, and u in that order <i>(6 on clyde)</i></li>
+    <li>All words that are exactly 22 lowercase letters long <i>(2 on clyde)</i></li>
+    <li>All words that have a 4-letter sequence repeated <i>(24 on clyde)</i></li>
+    <li>All words that start and end with the same 3 letter sequence <i>(32 on clyde)</i></li>
+    <li>All lowercase words that are made up of only pairs of consonant-vowels like <tt>banana</tt> and are at least 6 letters long <i>(545 on clyde)</i></li> 
+    <li>All words that end with their first 3 letters reversed like <tt><u>det</u>ec<u>ted</u></tt> <i>(14 on clyde)</i></li>
+</ol>
+
+<p>
+    For this portion of the assignment I want you to construct <tt>sed</tt> commands that will
+    do the following activities.   (Don't forget the <code>-E</code> flag!)
+</p>
+
+<ol start="8" class="padded">
+    <li>Replace all instances of "snow fall" or "wind chill" with "summertime"</li>
+    <li>Assuming the input is a dictionary file like /usr/share/dict/words.241 (one per line, alpha order), print out all words between "computer" and "science"</li>
+    <li>Replaces all instances of "Teh" with "The" and "teh" with "the", but only in standalone words</li>
+    <li>Move the last word on a line to the front</li>
+    <li>Find lines where a word has been repeated on the same line and replace that line with a repeated word.  Don't print the other lines.</li>
+    <!-- 
+    <li>Print out only the list of filenames the C preprocessor will include, and no other lines.  E.g., <tt>#include&lt;stdio.h&gt;</tt> would become <tt>stdio.h</tt> and be printed.   Be aware you can have leading whitespace before the # and before the angle brackets.</li>
+    -->
+    <li>Convert C block comments that are on one line and at the end into a line comment.<br>So <tt>/* add things up */</tt> would become <tt>// add things up</tt></li>
+    <li>Only print out lines that contain "cs 241", but change that to "CSCI 241"</li>
+    <li>Take the previous, but modify it to handle "CS" or "CSCI" with or without space and of any type of capitalization (e.g., "cScI241")</li>
+    <li>Truncate all lines after exactly 20 characters.</li>
+    <li>Replace all instances of "Roberto J. Hoyle" with "RJH" (including variations with "Robert" and/or no middle initial)</li>
+    <li>Assuming that a name is made up of two adjacent words that start with a capital and are followed by one or more lower case letters, anonymize the input by changing every name to be just their initials.  So "Roberto Hoyle" becomes "RH".  Be sure to handle having multiple names on the line.</li>
+    <li>If there is a 10 digit number on a line (not part of another word) reformat the number as <tt>(123) 456-7890</tt></li>
+    <li>Assume that the input is being piped from <tt>wget --quiet -O- http://xkcd.com/</tt> (which will print the xkcd comic's html page to stdout), print out the Image and Title information as follows:
+<pre class="boxed">
+Image: http://imgs.xkcd.com/comics/privacy_opinions.png
+Title: I&#39;m the Philosopher until someone hands me a burrito.
+</pre>
+    </li>
+</ol>
+
+<h3>Extra Credit</h3>
+<ol>
+    <li>Delete all shell comment lines, that is lines with optional whitespace followed by a <tt>#</tt>.  Don't delete them if the comments are on lines that have actual instructions (i.e., something other than whitespace before the <tt>#</tt>)</li>
+    <li>Check to see if there is a 10 digit number on a line which may have non-letters between the digits and print it out in the format <tt>1234567890</tt></li>
+    <li>Post your most challenging level on <a href="https://alf.nu/RegexGolf">Regex Golf</a></li>
+</ol>
+
+<h3>Useful links</h3>
+<p>
+You may find the following links useful when working on this assignment:
+</p>
+<ul>
+    <li><a href="http://www.regexper.com/">http://www.regexper.com/</a></li>
+    <li><a href="https://www.debuggex.com/">https://www.debuggex.com/</a></li>
+    <li><a href="http://www.regextester.com/">http://www.regextester.com/</a></li>
+    <li><a href="http://gskinner.com/RegExr/">http://gskinner.com/RegExr/</a></li>
+    <li><a href="http://regexpal.com/">http://regexpal.com/</a></li>
+    <!-- 
+    <li><a href="http://www.rubular.com/">http://www.rubular.com/</a></li>
+    -->
+</ul>
+
+<ul>
+    <li><a href="http://www.grymoire.com/Unix/Sed.html">sed - An Introduction and Tutorial</a></li>
+    <li><a href="http://www.linuxtopia.org/online_books/linux_tool_guides/the_sed_faq/sedfaq3_008.html">sed debugging tools</a></li>    
+</ul>
+
+<!-- 
+    - pig latinize a range of words
+
+    - lines that start with a number, end with a word
+
+    - caesar cipher?
+
+    - print out just the shell comments
+
+    - convert ssh foo@bar.com to slogin -l foo bar.com
+-->
+
+<h2>Submission</h2>
+<p>
+    Be sure your README document has your name and the honor code statement and 
+     add, commit, and push it to the repository.
+</p>
+
+<hr>
+Last Modified: Feb 28, 2018 - <a href="mailto:roberto.hoyle@oberlin.edu">Roberto Hoyle</a>, based on material by Benjamin Kuperman</address>
+
+</body>
+</html>
+

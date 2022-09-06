@@ -1,0 +1,312 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+
+<title>CSCI 241 - Bits are bits</title>
+<link rev="made" href="mailto:rhoyle@oberlin.edu">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../styles.css">
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+
+</head>
+<body>
+
+<h1>CSCI 241 - Homework 4: Bits are bits</h1>
+<p>
+    <em>Due by 11:59.59pm Friday, April 01</em>
+</p>
+
+<h2>Introduction</h2>
+
+<p>
+    In this lab you will get experience dealing with data on the binary level.
+    You will also have to deal with static local variables and using global
+    variables.  In addition, you'll be expected to use conditional compilation
+    via a Makefile, creating header files, etc.
+</p>
+
+<p class="notice">
+    You will work with a partner on this assignment.  
+    It is expected that you work together and equally contribute to the 
+    development of your solution.  Also, you are both responsible for understanding
+    how your solution works.  You need only submit one assignment per group, but
+    clearly indicate your partnership in the README and comments for files.  You should play with collaborating on github as you are doing this.
+</p>
+
+<p>
+The URL for the github repository for this account is <a href="https://classroom.github.com/a/RTl3Jfiz">https://classroom.github.com/a/RTl3Jfiz</a>
+</p>
+
+
+<h2>Part 1 - converting data to binary and back</h2>
+<p>
+    In this part, you will be creating 2 programs.  <tt>encode_bits</tt> which
+    will generate the "binary" representation of a file and <tt>decode_bits</tt>
+    which will take that representation and convert it back to the original
+    format.
+</p>
+
+<h3>encode_bits</h3>
+<p>
+    Create a program called <tt>encode_bits</tt>.  This program should use
+    <tt>getchar()</tt> to read in characters one at a time and then call
+    <tt>print_bits()</tt> (<a href="#print_bits">see below</a>) to output that
+    character as a sequence of '1' and '0' characters.  It should stop on EOF.
+</p>
+
+<h3>decode_bits</h3>
+<p>
+    Create a program called <tt>decode_bits</tt>.  This program should use
+    <tt>getchar()</tt> to read in characters one at a time and then call
+    <tt>decode_bits()</tt> (<a href="#decode_bits">see below</a>) to output that
+    sequence of '1' and '0' characters as actual characters. It should stop on
+    EOF.
+</p>
+
+<h3>bits.c &amp; bits.h</h3>
+<p>
+    Create a file called <tt>bits.c</tt> that contains the following two
+    functions and a header file <tt>bits.h</tt> that contains a guard against
+    multiple inclusion, other needed includes, and function prototypes.
+</p>
+
+<dl class="code">
+    <dt id="print_bits">void print_bits(int ch)
+    <dd>Takes the character <tt>ch</tt> and outputs its value in binary format
+    with all leading zeros and with the MSB first. For example, the letter 'A'
+    has a value of 0x41, and should be output as <tt>01000001</tt>.  A newline
+    character has a value of 0x0a and should be output as <tt>00001010</tt> .
+
+    <dd>You should not assume the number of bits that are in a char, instead use
+    the constant <tt>CHAR_BIT</tt> from limits.h.
+
+    <dt id="decode_bits">void decode_bits(int ch)
+    <dd>If the character is whitespace, skip it.  (You might want to use
+    <tt>isspace()</tt> in ctype.h.)
+
+    <dd>If the character is a '1' or a '0', you should add it into an output
+    buffer (numerically, shifting the current contents appropriately).
+    Once you've seen CHAR_BIT bits, you should print the corresponding
+    character out.
+
+    <dd>If the character is neither white space, nor a binary digit, you should
+    print a message to the screen, and then use <tt>exit()</tt> to quit your
+    program with a non-zero value.
+</dl>
+
+<h3>Programming hints for part 1</h3>
+<p>
+    You'll probably need to use static local variables to handle
+    <tt>decode_bits</tt> since it only prints out a character every CHAR_BIT
+    calls to it.
+</p>
+
+<p>
+    Don't forget to make rules in your Makefile include the correct
+    compilation.  <tt>bits.o</tt> should be the dependency for the two other
+    programs, and you should have a separate rule for its compilation.
+</p>
+
+
+<h2>Part 2 - Number Transformation</h2>
+
+<p>
+    For the second part, you will be creating a function to read in a positive
+    integer value and storing the result in a <tt>long</tt> integer variable.
+    You will also be creating 4 short programs that will use that function to
+    read in integers and output them in one of 4 different formats -- binary,
+    decimal, octal, or hexadecimal.
+</p>
+
+<h3>reading in a number</h3>
+<p>
+    Create a file called <tt>getnum.c</tt> and another called
+    <tt>getnum.h</tt>.  In <tt>getnum.c</tt> you will create the function
+    <tt>getnum()</tt> that is used by your other programs.
+</p>
+
+<dl class="code">
+    <dt>long getnum(void)
+    <dd>Read in a positive integer in one of 4 formats described below and then
+    return the value.
+
+    <dd>Skip leading whitespace and stop reading in a number on the next
+    occurrence of whitespace.
+
+    <ol class="padded">
+        <li><b>Binary</b> - begins with a leading <tt>0b</tt> and then a
+        sequence of <tt>0</tt> and <tt>1</tt> characters</li>
+
+        <li><b>Octal</b> - begins with a leading <tt>0</tt> followed by 1 or
+        more digits from 0-7</li>
+
+        <li><b>Decimal</b> - either a single <tt>0</tt> or a digit from 1-9
+        followed by zero or more digits from 0-9 </li>
+
+        <li><b>Hexadecimal</b> - begins with a leading <tt>0x</tt> followed by 1
+        or more digits from 0-9 or A-F</li>
+    </ol>
+
+    <dd>If the integer read is invalid, somehow signal the caller that the value
+    returned is not valid.  I'd suggest you consider a global variable.
+
+    <dd>If the input is invalid, skip to the next whitespace in the input or EOF.
+
+    <dd>
+    You might find it useful to "unread" a character.
+    You can do so using <tt>ungetc(ch, stdin);</tt> where "ch" is the character
+    you just read.  Note that you can only un-read one character at a time
+    until you read in a new character.
+
+    <dd>Building a state diagram like the one below might be useful in
+    visualizing the behavior of this function.  Note: The image includes the case for negative numbers, which are not part of the main assignment.
+    <img class="image-centered" src="tobinary-machine.png" alt="state machine">
+
+</dl>
+
+<h3>Printing out a number</h3>
+<p>
+    You will then create 4 short programs that will read in a sequence of number
+    and then output them one per line in a specified format.  All 4 will be
+    using sign-magnitude format.  (If negative, print out the sign and then the
+    rest as if it were positive -- important for binary.)
+</p>
+
+<ul class="padded">
+    <li><tt>tobinary</tt> - outputs the signed value in binary with a leading <tt>0b</tt></li>
+    <li><tt>todecimal</tt> - outputs the signed value in base 10 with no leading <tt>0</tt> characters</li>
+    <li><tt>tooctal</tt> - outputs the signed value in base 8 with a single leading <tt>0</tt></li>
+
+    <li><tt>tohex</tt> - outputs the signed value in base 16 (uppercase) with a leading <tt>0x</tt></li>
+</ul>
+<p>
+    In the event that the integer being read is invalid, simply print
+    "<tt>ERROR</tt>" to the screen.
+</p>
+<p>
+    Loop until no more integers remain.
+</p>
+
+<h3>Programming hints for part 3</h3>
+<ul class="padded">
+    <li>You will probably want to have more functions than just the one required in this
+    part.  You can also have other functions or global flags that can be used by
+    the toBASENAME programs.</li>
+
+    <li>You may ignore the possibility of an integer overflow in the numbers you read.</li>
+
+    <li>At no point in time should your program segfault or generate errors when running under valgrind.</li>
+
+    <li>Be sure your program can handle both upper and lower case in hex. 
+    ("man ctype" for inspiration)</li>
+
+    <li>Be sure to handle the special case of single '0' character.</li>
+
+    <li>Be sure to handle the case where EOF immediately follows a valid integer.</li>
+</ul>
+<p>
+    Don't forget to add these targets into your Makefile.
+</p>
+
+<hr>
+<h2>The rest of the info</h2>
+
+
+<h3>Sample program</h3>
+<p>
+    I've included my sample solution in <tt>~rhoyle/pub/cs241/hw4/</tt> with
+    binaries that should work on the lab machines.
+</p>
+
+<p>
+    <tt>decode_bits</tt> should exactly undo <tt>encode_bits</tt>.  For example,
+    you should get no output from the following:
+</p>
+<pre class="boxed">
+% <span class="typed">./encode_bits &lt; ./encode_bits | ./decode_bits &gt; output</span> 
+% <span class="typed">diff -q encode_bits output</span> 
+</pre>
+
+<p>
+    You can also chain together the base transformation if you like
+</p>
+<pre class="boxed">
+% <span class="typed">echo 32767 0xffff 071 0b101 cat | ./tobinary | ./tohex | ./tooctal | ./todecimal</span> 
+32767
+65535
+57
+5
+ERROR
+</pre>
+
+<h3>Extra Credit</h3>
+<p> Read in a flag <b>on the command line</b> that specifies the base for the output.  It should be one of:
+</p>
+<ul><li><b>-b</b>: binary (the default, as specified above)</li>
+  <li><b>-o</b>: octal (convert all 3-bit strings into a number from 0-7)</li>
+  <li><b>-h</b>: hex (convert all 4-bit strings into a number from 0-F)</li>
+</ul>
+<p>Note, your output, if octal, should be the regular number without the leading 0.  The number, if hex, should be the regular number without the leading 0x.  You will need to modify both encode_bits and decote_bits for full credit, as you'll need to be able to decode each type of encoding.</p>
+<p>Handle negative numbers</p>
+
+<h3>README</h3>
+<p>
+    As with the first project, I want you to create a file called <tt>README</tt>
+</p>
+<ol class="padded">
+    <li>Your name (and partner's name) and the date</li>
+    <li>A list of the programs with a short one-line description of each</li>
+    <li>A description of how someone should use your version of
+    <tt>getnum()</tt> including a description of how it signals the validity of
+    the value read.</li>
+    <li>A list of all remaining compilation problems, warnings, or errors.
+        Note that for full marks, it is expected that you will have corrected
+        all of these things.</li>
+    <li>A statement about any valgrind errors which occur</li>
+    <li>An estimate of the amount of time you spent designing, implementing, and
+    deubgging these programs</li>
+    <li>The honor code statement:
+    <q class="honor">I have adhered to the Honor Code in this assignment</q>
+        </li>
+</ol>
+
+
+
+<h3>Submission</h3>
+<p>
+    Now you should <tt>make clean</tt> to get rid of your executables and
+    commit your folder containing your source files, README, and Makefile through git, as you did in last week's assignment.  For a refresher, refer to those instructions.
+</p>
+<!---
+<pre class="boxed">
+% <tt>cd ~/cs241</tt>
+% <tt>handin -c 241 -a 4 hw4</tt>
+% <tt>lshand</tt>
+</pre 
+--->
+<h3>Grading</h3>
+<p>
+    Here is what I am looking for in this assignment:
+</p>
+<ul class="padded">
+    <li>A working Makefile with your programs, all, and clean as targets</li>
+
+    <li>All programs should have comments including your name and date at the
+    top.  Functions should have a brief description of what they do and an
+    explanation of their return values.</li>
+
+    <li>All programs should compile using <tt>gccx</tt> on clyde
+    with no compiler warnings or errors.</li>
+
+    <li>All programs should run using <tt>valgrind</tt> on clyde
+    with no warnings or errors.</li>
+</ul>
+
+<hr>
+<address>Last Modified: March 24, 2022 - <a href="mailto:rhoyle@oberlin.edu">Roberto Hoyle</a>, with material from Ben Kuperman</address>
+
+</body>
+</html>
+
+<!-- vim: set fdm=marker tw=80: -->

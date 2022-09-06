@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>CSCI 241 - Homework 1</title>
+<link rev="made" href="mailto:rhoyle@oberlin.edu">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+
+<body>
+
+<h1>CSCI 241 - Homework 1:<br>Shell Scripting</h1>
+<p>
+	<em>Due by 11:59.59pm Friday October 22</em>
+</p>
+<p>
+We're going to start things off nice and simple.  I'll recommend you create a
+<tt>cs241</tt> directory in your CS account and a <tt>hw1</tt> directory inside
+that.
+</p>
+
+<p>
+First off, go to <a href="https://classroom.github.com/a/9i9oVJE_">https://classroom.github.com/a/9i9oVJE_</a> and create a repository in the CS 241 organization.
+</p>
+
+<p>Click on the link and head towards the created repository.  It will be called <b>hw1-username</b>
+</p>
+
+<p>
+  Go back to your CS account to the cs241 directory above, and clone the repository into this account.  Refer to the github tutorials for how to do this step.  
+</p>
+
+<p>
+  To work with a partner, follow these steps:
+  </p>
+<ul><li>Go to the GitHub website and navigate to your homework's repository.</li>
+  <li>Click on Settings.</li>
+  <li>Click on Manage access.</li>
+  <li>Click on the green button "Invite teams or people."</li>
+  <li>Insert your partner's GitHub account name.</li>
+  <li>Give them write access.</li>
+  <li>Your partner will get an email to confirm the invite.  <strong>Until they confirm, they will not have access to the repository!</strong></li>
+  <li>They can now clone/commit/push/etc.</li>
+  </ul>
+<p>
+  Everyone is going to be expected to turn in a submission.  It makes no sense to work on two separate repositories, however.  For this assignment, one person will add the other as a collaborator and you will both do the assignment on that repository.  For the other repository, just commit a README file with the name of your group (optional) and your partner.
+</p>
+
+<h2>Introduction</h2>
+<p>
+    For this assignment you will be creating a number of shell scripts.
+</p>
+
+        <h2>Part 1 - URL Testing</h2>
+        <p>
+            Write a shell script called <tt>testurl.sh</tt> that accepts a list
+            of urls in a separate file and tests if the website is up or not. You might find it
+            useful to checkout the <tt>curl</tt>, <tt>wget</tt> and <tt>tail</tt> commands.
+        </p>
+<pre class="boxed">
+rhoyle@clyde$ cat urls
+http://cs.oberlin.edu/~ncare/cs241/labs/lab8.html
+https://occs.cs.oberlin.edu/~rhoyle/17s-cs241/assignments/hw02.html
+http://no.such.url
+http://occs.cs.oberlin.edu
+rhoyle@clyde$ ./testurl.sh urls
+Not found: http://no.such.url</pre>
+        <p>
+            This script should also handle errors. If the user doesn't provide
+            any urls to the script it should print out a usage message.
+        </p>
+
+        <hr>
+
+        <h2>Part 2 - Back it up a step</h2>
+        <p>
+            Next, I want you to create a script called <tt>backup.sh</tt>.  The
+            script should take as arguments a directory to backup into
+	    followed by a list of one or more files to copy
+            to the backup directory.
+        </p>
+        <p>
+            Your script should only copy files in if their timestamp is more
+            recent than the file that exists in the backup directory when the
+            script is run. You might find it helpful to check bash's <tt>test</tt>
+            (i.e. <tt>[ ]</tt>) syntax. Additionally, you should make your script
+            executable using <tt>chmod</tt>. That is, the command should be
+            runnable as follows
+        </p>
+
+        <div class="codebox">
+            <tt>$ ./backup.sh ~/.backup file1 file2 dir1</tt>
+        </div>
+
+
+        <hr>
+
+        <h2>Part 3 - Diskhogger</h2>
+        <p>
+            Create a shell script called
+            <tt>diskhog.sh</tt> that lists the 5 largest items (files or
+            directories) in the current directory in decreasing order of size. You
+            should output the sizes in a human readable format like so:
+        </p>
+<pre class="boxed">
+% cd ~rhoyle/pub/cs241
+% ./diskhog.sh
+3.9M week03
+572K old
+348K hw06
+152K week06
+112K week05</pre>
+        </div>
+        <p>
+            Check out the man pages for <tt>du</tt>, <tt>cut</tt>, <tt>sort</tt>,
+            <tt>xargs</tt> and <tt>head</tt> (or <tt>tail</tt>)
+        </p>
+	If the script is run from an empty directory, make sure it prints nothing at all (and not an error message)
+        <hr>
+
+<!---        <h2>Part 4 - Malicious behaviours</h2>
+        <p>
+            Forth, I want you to create a script called <tt>malicious.sh</tt>
+            that will scan a directory for malicious files and list them.
+            Malicious files are defined as follows:
+        </p>
+        <ul>
+            <li>
+                Files with suspicious names: filenames containing dashes or
+                spaces, nameless files, etc. (see
+                <a href="https://www.xkcd.com/1247/">xkcd #1247</a> for
+                details)
+            </li>
+            <li>
+                Files with invalid owners or owner groups
+            </li>
+            <li>
+                Files with unusual timestamps.
+            </li>
+            <li>
+                World Writable Files (files with permissions 777)
+            </li>
+            <li>
+                Find some broken symbolic links
+            </li>
+            <li>
+                Files with no valid owner and/or group
+            </li>
+        </ul>
+        <p>
+            You'll find the <tt>find</tt> command helpful.
+        </p>
+        <p>
+            For extra credit, create a script that will generate all of files
+            that will create the types of files listed above. And have the
+            program accept a list of white-listed programs that are secure.
+        </p>
+        <hr>
+--->
+
+<h2>Part 4 - linecount</h2>
+
+<p>
+    Create a shell script called <tt>linecount</tt> that by default will report
+    the total number of lines in all of the <em>files</em> in the current
+    working directory (recursively).
+</p>
+
+<p>
+    You'll want to take a look at <tt>wc</tt>, <tt>cd</tt>, <tt>find</tt>, and <tt>test</tt>.
+</p>
+
+
+<!---
+        <h2>Part 5 - Retro-grade Scripting</h2>
+        <p>
+            I want you to write a script called <tt>gradeit.sh</tt>
+            that will test your pyramid and rot128 submissions for lab 1. 
+        </p>
+        <p>
+            The script should analyze student's submissions for 
+            correctness and warn if the output of the program differs from the reference implementation, which is located in <tt>~rhoyle/pub/cs241/hw01</tt>.
+        </p>
+        <p>
+        	You must decide what to test for.  You will be graded on how thorough your test is.  Explain, in comments in your script, what you are testing for and why you are running that particular test.  After your script has finished, you should clean up any temporary files created by the testing process
+        <p>
+            You'll want to take a look at<tt>wc</tt>, <tt>pushd</tt> (and
+            <tt>popd</tt>), <tt>find</tt>, and <tt>diff</tt>
+        </p>
+
+        <hr>
+
+--->
+
+        
+<h2>Part 5 - Data file analysis</h2>
+
+<p>
+    I often find myself using shell tools to answer questions about a data file
+    that I'm working on.
+
+    The file that we will work on can be downloaded from <a href="https://coronavirus.ohio.gov/static/dashboards/COVIDSummaryData.csv">https://coronavirus.ohio.gov/static/dashboards/COVIDSummaryData.csv</a>.  You should use <tt>wget</tt> or <tt>curl</tt> to download it.
+
+</p>
+
+<p>
+    Answer the following questions in your <tt>README</tt> file (and give the
+    commands used to find the answer):
+</p>
+
+<ol class="padded">
+    <li>How many cases are in Lorain county?</li>
+    <li>How many cases are there for Males vs. Females?</li>
+    <li>Which county has the most cases?</li>
+    <li>Which county has the most cases for 20-29 year olds?</li>
+</ol>
+
+<p>
+    Potentially useful commands to look at include <tt>cut</tt>, <tt>sort</tt>,
+    and <tt>uniq</tt>.
+    If you include the commands you used to generate your answers, it might be
+    possible to give you partial credit.  Include the downloaded data file with your submission as the file will change over time.
+</p>        
+        
+        
+    	
+
+
+        <h2> Programming Hints</h2>
+        <ul>
+            <li>
+                You should make your programs executable using the <tt>chmod</tt>
+                command (specifically, <tt>chmod u+x</tt>)
+            </li>
+            <li>
+                You may assume that your programs won't have to handle
+                whitespace in their names.
+            </li>
+            <li>
+                For file permissions it might be useful to checkout the <a href="http://www.grymoire.com/Unix/Permissions.html#uh-0">Grymorie</a>
+                for help.
+            </li>
+        </ul>
+        <hr>
+
+
+<p>
+</p>
+
+<h3>Extra Credit</h3>
+
+<p>These are ideas for extra credit.  You do not need to implement them all.  You can also come up with your own ideas, just ask me if they would count for extra credit if you have doubts.</p>
+<ol>
+  <li>Modify testurl.sh to output if a file is a valid HTML file according to the W3C validator at <a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
+  <li>Modify your backup.sh script to keep a list of the five most
+            recent backup directories and store copies as symlinks.
+  </li>
+  <li>Modify diskhog.sh to take a flag to change the number of
+            items to display and another to limits it to files or directories.
+</li>
+
+        	<li>Make Diskhogger take a flag to change the number of items
+    to display, or maybe another that limits it to files/directories. </li>
+    		<li>
+    Have your linecount.sh script support an optional argument that will be used as a
+    file glob pattern for the types of files.  The user is responsible for
+    properly quoting things on the command line.  For example, to get a sum of
+    all of the lines in your java source files you would use:</li>
+<pre class="boxed">
+% <span class="typed">./linecount '*.java'</span> 
+</pre>
+</li>
+<!--			<li>Add more testing to gradeit.sh</li> -->
+<li>Take the COVID data and create a plot of infections by county in Ohio through a shell script using <tt>gnuplot</tt>.  All manipulation should be done via the shell or shell commands, no hand-editing is allowed.</li>
+</ol>
+
+
+
+
+<!-- --------------------------------------------------------------------- -->
+
+<h2>Turning it In</h2>
+<h3>README</h3>
+<p>
+    Create a file called <tt>README</tt> that contains
+</p>
+<ol>
+    <li>Your name</li>
+    <li>A description of the programs</li>
+    <li>Your answers to the "Data File Analysis" questions and commands</li>
+    <li>An estimate of the amount of time it took to complete each part</li>
+    <li>Any known bugs or incomplete functions</li>
+    <li>Any interesting design decisions you'd like to share</li>
+
+
+</ol>
+
+<p>
+    Now you should clean up your folder (remove test case detritus, etc.) and 
+    handin your folder containing your scripts and README. 
+</p>
+
+<h2>Grading</h2>
+<p>
+    Here is what I am looking for in this assignment:
+</p>
+<ul class="padded">
+    <li>A working set of shell scripts as described above</li>
+
+    <li>All programs should work on clyde.cs.oberlin.edu</li>
+    
+    <li>Good comments</li>
+
+    <li>A README with the information requested above.  The listing of known
+    bugs is important.</li>
+
+</ul>
+
+<hr>
+<address>Last Modified: September 15, 2020 - <a href="mailto:rhoyle@oberlin.edu">Roberto Hoyle</a> and Nick Care.  Some material based on work by Benjamin Kuperman.</address>
+<!-- Created: November 17, 2008 -->
+
+</body>
+</html>
+
+<!-- vim: set fdm=marker tw=80: -->

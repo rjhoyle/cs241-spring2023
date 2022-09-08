@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lecture 12 | Your awesome title</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Lecture 12" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/exercises/Lecture-12.html" />
+<meta property="og:url" content="http://localhost:4000/exercises/Lecture-12.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<script type="application/ld+json">
+{"headline":"Lecture 12","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebPage","url":"http://localhost:4000/exercises/Lecture-12.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<body><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="lecture-12--feb-28th-2020">Lecture 12 – Feb 28th, 2020</h1>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li>Log in to clyde.</li>
+  <li>Create a directory and <code class="language-plaintext highlighter-rouge">cd</code> into it.</li>
+  <li>Copy <code class="language-plaintext highlighter-rouge">~steve/ex/parse_int.c</code> into the directory.</li>
+</ol>
+
+<h2 id="task">Task</h2>
+<ol>
+  <li>Read through <code class="language-plaintext highlighter-rouge">parse_int.c</code> and try to understand what it is doing. Looking
+at the man page for <code class="language-plaintext highlighter-rouge">getchar(3)</code> and <code class="language-plaintext highlighter-rouge">isdigit(3)</code> is going to be helpful.</li>
+  <li>Compile <code class="language-plaintext highlighter-rouge">parse_int</code> and run it. It’s expecting input from <code class="language-plaintext highlighter-rouge">stdin</code>, so
+you can either type into the terminal while it’s running. It’ll receive
+input one line at a time so be sure to hit return/enter and if you want to
+signal the end of the input, press control-d (on an otherwise blank line).
+You can also run <code class="language-plaintext highlighter-rouge">$ echo 12345 | ./parse_int</code>.</li>
+  <li>Edit <code class="language-plaintext highlighter-rouge">parse_int.c</code> and change <code class="language-plaintext highlighter-rouge">num_value</code> so that it returns <code class="language-plaintext highlighter-rouge">0</code> on input
+<code class="language-plaintext highlighter-rouge">'0'</code>, <code class="language-plaintext highlighter-rouge">1</code> on input <code class="language-plaintext highlighter-rouge">'1'</code>, and so on up to <code class="language-plaintext highlighter-rouge">9</code> on input ‘<code class="language-plaintext highlighter-rouge">9</code>’. You can
+assume the input is in ASCII (take a look at the <code class="language-plaintext highlighter-rouge">ascii(7)</code> man page for
+handy tables of values) and in particular, ‘0’–‘9’ are consecutive values.
+Thus <code class="language-plaintext highlighter-rouge">ch - '0'</code> is probably useful to you.</li>
+  <li>Modify the behavior of <code class="language-plaintext highlighter-rouge">parse_int.c</code> so that it reads a positive integer
+(in decimal) one character at a time (until a non-digit is read). Print out
+the value of the integer times 7.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo 0 | ./parse_int
+0 * 7 = 0
+$ echo 1 | ./parse_int
+1 * 7 = 7
+$ echo 12345 | ./parse_int
+12345 * 7 = 86415
+</code></pre></div>    </div>
+
+    <p>Recall, $539$ means
+\(5\cdot10^2 + 3\cdot10^1 + 9\cdot10^0 = (5\cdot10^1 + 3\cdot10^0)\cdot10 + 9.\)
+But notice that the number in the parentheses is just $53$. Therefore, if
+<code class="language-plaintext highlighter-rouge">val</code> is our current value, then after reading in another digit, we need to
+multiply <code class="language-plaintext highlighter-rouge">val</code> by 10 and add the value of the digit.</p>
+  </li>
+  <li>Modify the behavior of <code class="language-plaintext highlighter-rouge">parse_int.c</code> again so that instead of reading just
+one integer, it reads two integers, separated by a <code class="language-plaintext highlighter-rouge">+</code>, adds them together,
+and prints out the result.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo 32527+1256289 | ./parse_int
+32527 + 1256289 = 1288816
+</code></pre></div>    </div>
+  </li>
+  <li>Modify <code class="language-plaintext highlighter-rouge">parse_int.c</code> one more time so that if the two numbers are separated
+by <code class="language-plaintext highlighter-rouge">+</code>, it adds them; by <code class="language-plaintext highlighter-rouge">-</code>, it subtracts the second from the first; by <code class="language-plaintext highlighter-rouge">*</code>,
+it multiples them; and by <code class="language-plaintext highlighter-rouge">/</code>, it divides the first by the second. What
+happens if you try to divide by 0? Handle that gracefully.</li>
+</ol>
+
+      </div>
+    </main></body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lecture 4 | Your awesome title</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Lecture 4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/exercises/Lecture-04.html" />
+<meta property="og:url" content="http://localhost:4000/exercises/Lecture-04.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<script type="application/ld+json">
+{"headline":"Lecture 4","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebPage","url":"http://localhost:4000/exercises/Lecture-04.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<body><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="lecture-4--sep-10th-2020">Lecture 4 – Sep 10th, 2020</h1>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li>Log on to clyde: <code class="language-plaintext highlighter-rouge">ssh user@clyde.cs.oberlin.edu</code>.</li>
+  <li>Create a directory with whatever name you like and <code class="language-plaintext highlighter-rouge">cd</code> into it.</li>
+</ol>
+
+<h2 id="task">Task</h2>
+<ol>
+  <li>The command <code class="language-plaintext highlighter-rouge">$ ls /bin /usr/bin</code> will print out a list of all the files
+in <code class="language-plaintext highlighter-rouge">/bin</code> and <code class="language-plaintext highlighter-rouge">/usr/bin</code>. Each of these is a program you can run, but there
+are likely too many to display in your terminal. So run the command again,
+but redirect the output to a file called <code class="language-plaintext highlighter-rouge">binaries</code>.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">$ wc -l binaries</code> to see how many lines are in the file.</li>
+  <li>Open the file with your favorite command line editor (e.g., <code class="language-plaintext highlighter-rouge">nvim</code>, <code class="language-plaintext highlighter-rouge">vim</code>,
+<code class="language-plaintext highlighter-rouge">emacs</code>, <code class="language-plaintext highlighter-rouge">nano</code>) and take a look at the output. Is the number you printed
+out in step 2 the actual number of binaries? Hint: Look closely at the
+first line.</li>
+  <li>One thing to notice is the output from <code class="language-plaintext highlighter-rouge">ls</code> is different when directed to a
+file than it is when it goes to the terminal. It turns out that programs
+can detect if their <code class="language-plaintext highlighter-rouge">stdout</code> is connected to a terminal or not. Some programs
+use this ability to change their output, some do not. Run <code class="language-plaintext highlighter-rouge">$ man isatty</code> and
+take a look at the manual page for the <code class="language-plaintext highlighter-rouge">isatty()</code> function. This is a C
+function and we’ll get to programming in C soon enough. For now, it’s
+enough to know that <code class="language-plaintext highlighter-rouge">stdout</code> is file descriptor <code class="language-plaintext highlighter-rouge">1</code> so the function call
+<code class="language-plaintext highlighter-rouge">isatty(1)</code> tells the program if <code class="language-plaintext highlighter-rouge">stdout</code> is a terminal or not.</li>
+  <li>Let’s figure out how many binaries start with the letter <code class="language-plaintext highlighter-rouge">z</code> by using
+<code class="language-plaintext highlighter-rouge">grep</code>. Recall <code class="language-plaintext highlighter-rouge">grep</code> reads files (or <code class="language-plaintext highlighter-rouge">stdin</code>) and prints lines matching a
+pattern. Run <code class="language-plaintext highlighter-rouge">$ grep z binaries</code>. Notice that it prints out all lines
+containing a <code class="language-plaintext highlighter-rouge">z</code>. That’s not what we want, but we’re close.</li>
+  <li>Grep interprets the <code class="language-plaintext highlighter-rouge">^</code> character to mean “match the beginning of the line”
+so <code class="language-plaintext highlighter-rouge">$ grep ^z binaries</code> should do what we want. Run that and look at the
+output.</li>
+  <li>
+    <p>Let’s figure out how many of them there are. Rerun that <code class="language-plaintext highlighter-rouge">grep</code> command and
+redirect <code class="language-plaintext highlighter-rouge">stdout</code> to a file <code class="language-plaintext highlighter-rouge">zfiles</code>. Run the appropriate <code class="language-plaintext highlighter-rouge">wc</code> command to
+figure out how many there are.</p>
+
+    <p>To recap what we’ve done so far, we created a file containing a list of all
+of the binaries in <code class="language-plaintext highlighter-rouge">/bin</code> and <code class="language-plaintext highlighter-rouge">/usr/bin</code>. We used <code class="language-plaintext highlighter-rouge">grep</code> to extract just
+those that start with <code class="language-plaintext highlighter-rouge">z</code> and stored that in a file. Finally, we ran <code class="language-plaintext highlighter-rouge">wc</code>
+on that to figure out how many there are. Pretty simple but we had to
+create two files for it that we don’t really care about if our goal was
+just to figure out that final number.</p>
+  </li>
+  <li>
+    <p>We can skip the creation of the first file by <em>piping</em> the output of <code class="language-plaintext highlighter-rouge">ls</code>
+to <code class="language-plaintext highlighter-rouge">grep</code> and storing the result to a file. Explicitly,</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls</span> /bin /usr/bin | <span class="nb">grep</span> <span class="s1">'^z'</span> <span class="o">&gt;</span>zfiles1
+</code></pre></div>    </div>
+
+    <p>Notice that we don’t specific a file name for <code class="language-plaintext highlighter-rouge">grep</code>. When we omit it, it
+reads from <code class="language-plaintext highlighter-rouge">stdin</code>.</p>
+  </li>
+  <li>
+    <p>Let’s check that the two files we just created are identical by using the
+<code class="language-plaintext highlighter-rouge">diff</code> program to print out the differences between two files. Run</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-u</span> zfiles zfiles1
+</code></pre></div>    </div>
+
+    <p>Nothing should be printed when you do that because the files should be the
+same.</p>
+  </li>
+  <li>Append a line of text (anything you want) to <code class="language-plaintext highlighter-rouge">zfiles1</code> using <code class="language-plaintext highlighter-rouge">echo</code> with
+an append redirection (<code class="language-plaintext highlighter-rouge">&gt;&gt;</code>).</li>
+  <li>Rerun the <code class="language-plaintext highlighter-rouge">diff</code> command from step 9. You should see some output. (Diffing
+files is extremely useful. We’ll see more of this later and you’ll see a
+lot of it as you program more.)</li>
+  <li>Enough <code class="language-plaintext highlighter-rouge">diff</code> for now. In step 8, we skipped the creation of one file by
+using a pipe but we still created a second file. Construct a new command
+piping the output of <code class="language-plaintext highlighter-rouge">ls</code> to <code class="language-plaintext highlighter-rouge">grep</code> and piping that output to <code class="language-plaintext highlighter-rouge">wc</code>. You
+should get exactly the output you got in step 7.</li>
+  <li>We actually did more work than we needed to. Remember that the shell will
+expand wildcards that match file names. For example, <code class="language-plaintext highlighter-rouge">/bin/z*</code> will be
+expanded to the paths of all of the files that match that pattern. Run <code class="language-plaintext highlighter-rouge">$
+echo /bin/z*</code> to see the result.</li>
+  <li>
+    <p>Using <code class="language-plaintext highlighter-rouge">ls</code> rather than <code class="language-plaintext highlighter-rouge">echo</code> (because <code class="language-plaintext highlighter-rouge">echo</code> prints a single line and we
+want multiple lines) and the appropriate patterns, construct a pipeline to
+count all of the binaries starting with <code class="language-plaintext highlighter-rouge">z</code> again. That is, fill in the
+missing bits in</p>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">ls</span> <span class="o">[</span>...] | <span class="nb">wc</span> <span class="nt">-l</span>
+</code></pre></div>    </div>
+  </li>
+  <li>That’s enough for today. You can delete the directory you created.</li>
+</ol>
+
+      </div>
+    </main></body>
+
+</html>

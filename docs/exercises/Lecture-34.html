@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lecture 34 | Your awesome title</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Lecture 34" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/exercises/Lecture-34.html" />
+<meta property="og:url" content="http://localhost:4000/exercises/Lecture-34.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<script type="application/ld+json">
+{"headline":"Lecture 34","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebPage","url":"http://localhost:4000/exercises/Lecture-34.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<body><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="lecture-34--may-6th-2020">Lecture 34 – May 6th, 2020</h1>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li>Log in to clyde.</li>
+</ol>
+
+<h2 id="task">Task</h2>
+<ol>
+  <li>Go to
+<a href="https://github.com/systems-programming/hello">https://github.com/systems-programming/hello</a>
+and fork the repository.</li>
+  <li>Pick one of the changes below (or anything else you desire), and you’re
+going to implement the change and create a pull request for it in
+subsequent steps.
+Change ideas:
+    <ul>
+      <li>Add a <code class="language-plaintext highlighter-rouge">Makefile</code> that will build the program.</li>
+      <li>Use <code class="language-plaintext highlighter-rouge">getenv(3)</code> to get the <code class="language-plaintext highlighter-rouge">USER</code> variable and use that to customize the
+message.</li>
+      <li>Exit with the <code class="language-plaintext highlighter-rouge">EXIT_SUCCESS</code> value defined in <code class="language-plaintext highlighter-rouge">stdlib.h</code> rather than just
+<code class="language-plaintext highlighter-rouge">0</code>.</li>
+      <li>Write a <code class="language-plaintext highlighter-rouge">goodbye</code> program.</li>
+      <li>Write some other simple program.</li>
+      <li>Add an image to the <code class="language-plaintext highlighter-rouge">README.md</code></li>
+      <li>Add a <code class="language-plaintext highlighter-rouge">.travis.yml</code> file to make sure the program builds when changes are
+committed.</li>
+      <li>Make any other changes you desire.</li>
+    </ul>
+  </li>
+  <li>Once you have a change in mind, pick a short name that is reflective of
+that change and create and checkout a new branch.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git checkout -b my-feature
+</code></pre></div>    </div>
+    <p>(Pick a better name than <code class="language-plaintext highlighter-rouge">my-feature</code>!)</p>
+  </li>
+  <li>Implement your change and commit your change.</li>
+  <li>Push your change to Github.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git push -u origin my-feature
+</code></pre></div>    </div>
+  </li>
+  <li>You should get a message about visiting a URL to submit a pull request. Go
+to the URL and submit the pull request.</li>
+  <li>Modify the pull request by making another commit and pushing again. (Assume
+you got asked to make a change to what you committed.)</li>
+  <li>Squash your changes using
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git rebase -i master
+</code></pre></div>    </div>
+    <p>This should open your editor. You’ll want to <code class="language-plaintext highlighter-rouge">pick</code> the top-most commit and
+<code class="language-plaintext highlighter-rouge">squash</code> the others.
+Save the file and exit the editor.
+Push them to Github.</p>
+  </li>
+  <li>Check out your pull request (and others) by going to
+<a href="https://github.com/systems-programming/hello/pulls">https://github.com/systems-programming/hello/pulls</a>.
+Feel free to leave comments on other people’s pull requests.</li>
+  <li>If your PR is accepted, fetch from <code class="language-plaintext highlighter-rouge">upstream</code> (you’ll need to add that
+first) and delete your branches.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git remote add upstream https://github.com/systems-programming/hello.git
+$ git fetch upstream master:master
+$ git branch -d my-feature # you may need -D instead of -d
+$ git push origin -d my-feature # or delete from the web interface
+</code></pre></div>    </div>
+    <p>If your PR needs to be modified to handle upstream changes, fetch from
+upstream, rebase, fix any conflicts, and push.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git remote add upstream https://github.com/systems-programming/hello.git
+$ git fetch upstream master:master
+$ git rebase master
+$ git push
+</code></pre></div>    </div>
+    <p>If there were conflicts after the <code class="language-plaintext highlighter-rouge">rebase</code>, you’ll need to fix them, run
+<code class="language-plaintext highlighter-rouge">$ git add</code> on the file with conflicts and then <code class="language-plaintext highlighter-rouge">$ git rebase --continue</code>.</p>
+  </li>
+</ol>
+
+      </div>
+    </main></body>
+
+</html>

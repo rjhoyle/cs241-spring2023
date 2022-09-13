@@ -16,7 +16,7 @@ Sep 06 | Introduction and Course Overview ||
 Sep 08 | Introduction to UNIX and the shell | Read LCL, Chapters 1-3<br/>Run the vim and emacs tutorials|[HW0](assignments/intro.md)|
 **Week 2** |||
 Sep 13 | UNIX Commands | Read LCL, Chapters 4-8||
-Sep 15 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sections 1.1, 1.3, 1.6, 1.7, 2.1, and 2.2<br /><a href="https://learngitbranching.js.org/">Interactive Git Tutorial</a>||
+Sep 15 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sections 1.1, 1.3, 1.6, 1.7, 2.1, and 2.2<br /><a href="https://learngitbranching.js.org/">Interactive Git Tutorial</a>||[Exercise](exercises/Lecture-03.md)
 **Week 3** |||
 Sep 20 | Introduction to C and Compilation ||[HW1](assignments/unix-intro.md)|
 Sep 22 | Makefiles | ||

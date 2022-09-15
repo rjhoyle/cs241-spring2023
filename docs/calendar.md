@@ -18,26 +18,26 @@ Sep 08 | Introduction to UNIX and the shell | Read LCL, Chapters 1-3<br/>Run the
 Sep 13 | UNIX Commands | Read LCL, Chapters 4-8||
 Sep 15 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sections 1.1, 1.3, 1.6, 1.7, 2.1, and 2.2<br /><a href="https://learngitbranching.js.org/">Interactive Git Tutorial</a>||[Exercise](exercises/Lecture-03.md)
 **Week 3** |||
-Sep 20 | Introduction to C and Compilation ||[HW1](assignments/unix-intro.md)|
+Sep 20 | Introduction to C and Compilation |Effective C Ch. 1 |[HW1](assignments/unix-intro.md)|
 Sep 22 | Makefiles | ||
 **Week 4** |||
-Sep 27| Objects, Functions, and Types | 
-Sep 29| Arithmetic Types | Dis Ch. 4.1 - 4.6
+Sep 27| Objects, Functions, and Types | Effective C Ch. 2 |
+Sep 29| Arithmetic Types | Effective C Ch. 3<br/> Dis Ch. 4.1 - 4.6 |
 **Week 5** ||
-Oct 04| Expressions and Operators | 
-Oct 06 | Control Flow | 
+Oct 04| Expressions and Operators | Effective C Ch. 4 | 
+Oct 06 | Control Flow | Effective C Ch. 5 | 
 **Week 6** ||
-Oct 11| Project Proposals | 
-Oct 13| Dynamically Allocated Memory |
+Oct 11| Dynamically Allocated Memory | Effective C Ch. 6 | 
+Oct 13| Project Proposals | 
 **Fall Break** || 
 **Week 7** ||
-Oct 25| Characters and Strings |
-Oct 27| Input/Output |
+Oct 25| Characters and Strings | Effective C Ch. 7 | 
+Oct 27| Input/Output | Effective C Ch. 8 | 
 **Week 8** ||
-Nov 01| Preprocessor |
-Nov 03| Program Structure | 
+Nov 01| Preprocessor | Effective C Ch. 9 | 
+Nov 03| Program Structure | Effective C Ch. 10 | 
 **Week 9** ||
-Nov 08 | Debugging, Testing, and Analysis | DiS Ch. 3.1 - 3.4
+Nov 08 | Debugging, Testing, and Analysis | Effective C Ch. 2<br/> DiS Ch. 3.1 - 3.4 |
 Nov 10| Self-referential Structures | 
 **Week 10** ||
 Nov 15| Advanced git | 

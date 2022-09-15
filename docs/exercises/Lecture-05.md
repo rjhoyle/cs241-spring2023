@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lecture 5
-classdate: 2020-02-12
+classdate: 2022-09-15
 ---
 # {{ page.title }} -- {{ page.classdate | date_to_string: "ordinal", "US" }}
 

@@ -19,7 +19,7 @@ Sep 13 | UNIX Commands | Read LCL, Chapters 4-8||
 Sep 15 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sections 1.1, 1.3, 1.6, 1.7, 2.1, and 2.2<br /><a href="https://learngitbranching.js.org/">Interactive Git Tutorial</a>||[Exercise&nbsp;2](exercises/Lecture-02.md)<br/>[Exercise&nbsp;3](exercises/Lecture-03.md)<br/>[Exercise&nbsp;4](exercises/Lecture-04.md)
 **Week 3** |||
 Sep 20 | Introduction to C and Compilation |Effective C Ch. 1 |[HW1](assignments/unix-intro.md)|
-Sep 22 | Makefiles | ||
+Sep 22 | Makefiles | <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-intro">A short introduction to Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-variables">Variables in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-implicit-rules">Implicit rules in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-standard-targets">Standard targets in Makefiles</a> ||
 **Week 4** |||
 Sep 27| Objects, Functions, and Types | Effective C Ch. 2 |[HW2](../assignments/hw2)|
 Sep 29| Arithmetic Types | Effective C Ch. 3<br/> Dis Ch. 4.1 - 4.6 |

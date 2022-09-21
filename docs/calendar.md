@@ -21,7 +21,7 @@ Sep 15 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sectio
 Sep 20 | Introduction to C and Compilation |Effective C Ch. 1 |[HW1](assignments/unix-intro.md)|
 Sep 22 | Makefiles | ||
 **Week 4** |||
-Sep 27| Objects, Functions, and Types | Effective C Ch. 2 |
+Sep 27| Objects, Functions, and Types | Effective C Ch. 2 |[HW2](../assignments/hw2)|
 Sep 29| Arithmetic Types | Effective C Ch. 3<br/> Dis Ch. 4.1 - 4.6 |
 **Week 5** ||
 Oct 04| Expressions and Operators | Effective C Ch. 4 | 

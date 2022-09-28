@@ -24,7 +24,7 @@ Sep 22 | Makefiles | <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make
 Sep 27| Objects, Functions, and Types | Effective C Ch. 2 |[HW2](../assignments/hw2)|
 Sep 29| Arithmetic Types | Effective C Ch. 3<br/> Dis Ch. 4.1 - 4.6 |
 **Week 5** ||
-Oct 04| Expressions and Operators | Effective C Ch. 4 | 
+Oct 04| Expressions and Operators | Effective C Ch. 4 | [HW3](../assignments/hw3) |
 Oct 06 | Control Flow | Effective C Ch. 5 | 
 **Week 6** ||
 Oct 11| Dynamically Allocated Memory | Effective C Ch. 6 | 

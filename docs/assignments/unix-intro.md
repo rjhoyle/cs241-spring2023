@@ -126,7 +126,7 @@ hoyle@occs:~/pub/cs241/hw1$ ./modified.sh
 hoyle@occs:~/pub/cs241/hw1$ 
 </pre>
 
-## Part 3 - 
+## Part 3 - Top
 
 Give me a command to list the process that is using the most physical memory.  You may find the commands *top* and *head* useful.
  

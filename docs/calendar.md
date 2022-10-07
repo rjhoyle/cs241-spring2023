@@ -31,25 +31,25 @@ Oct 11| Dynamically Allocated Memory | Effective C Ch. 6 |
 Oct 13| Project Proposals | 
 **Fall Break** || 
 **Week 7** ||
-Oct 25| Characters and Strings | Effective C Ch. 7 | 
+Oct 25| Characters and Strings | Effective C Ch. 7 | [HW4](../assignments/hw4) | 
 Oct 27| Input/Output | Effective C Ch. 8 | 
 **Week 8** ||
-Nov 01| Preprocessor | Effective C Ch. 9 | 
+Nov 01| Preprocessor | Effective C Ch. 9 | HW5
 Nov 03| Program Structure | Effective C Ch. 10 | 
 **Week 9** ||
-Nov 08 | Debugging, Testing, and Analysis | Effective C Ch. 2<br/> DiS Ch. 3.1 - 3.4 |
+Nov 08 | Debugging, Testing, and Analysis | Effective C Ch. 2<br/> DiS Ch. 3.1 - 3.4 | HW6
 Nov 10| Self-referential Structures | 
 **Week 10** ||
-Nov 15| Advanced git | 
+Nov 15| Advanced git | | HW7
 Nov 17| Compression | 
 **Week 11** ||
 Nov 22| System Calls | 
 Nov 24 | **Thanksgiving Break**
 **Week 12** ||
 Nove 29 | Processes | 
-Dec 01| Interprocess Communication |
+Dec 01| Interprocess Communication | | HW8
 **Week 13** ||
-Dec 06 | Virtual Memory
+Dec 06 | Virtual Memory | 
 Dec 08 | Open Source Software
 **Week 14** |
 Dec 13 | Buffer Overflows | 

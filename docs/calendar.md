@@ -31,13 +31,13 @@ Oct 11| Dynamically Allocated Memory | Effective C Ch. 6 |
 Oct 13| Project Proposals | 
 **Fall Break** || 
 **Week 7** ||
-Oct 25| Characters and Strings | Effective C Ch. 7 | [HW4](../assignments/hw4) | 
-Oct 27| Input/Output | Effective C Ch. 8 | 
+Oct 25| Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | [HW4](../assignments/hw4) | 
+Oct 27| Characters and Strings | Effective C Ch. 7 | 
 **Week 8** ||
-Nov 01| Preprocessor | Effective C Ch. 9 | HW5
-Nov 03| Program Structure | Effective C Ch. 10 | 
+Nov 01| Input/Output | Effective C Ch. 8  | HW5
+Nov 03| Preprocessor | Effective C Ch. 9| 
 **Week 9** ||
-Nov 08 | Debugging, Testing, and Analysis | Effective C Ch. 2<br/> DiS Ch. 3.1 - 3.4 | HW6
+Nov 08 | Program Structure | Effective C Ch. 10  | HW6
 Nov 10| Self-referential Structures | 
 **Week 10** ||
 Nov 15| Advanced git | | HW7

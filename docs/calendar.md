@@ -34,7 +34,7 @@ Oct 13| Project Proposals |
 Oct 25| Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | [HW4](../assignments/hw4) | 
 Oct 27| Characters and Strings | Effective C Ch. 7 | 
 **Week 8** ||
-Nov 01| Input/Output | Effective C Ch. 8  | HW5
+Nov 01| Input/Output | Effective C Ch. 8  | [HW5](../assignments/hw5)
 Nov 03| Preprocessor | Effective C Ch. 9| 
 **Week 9** ||
 Nov 08 | Program Structure | Effective C Ch. 10  | HW6

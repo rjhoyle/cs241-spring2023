@@ -34,20 +34,20 @@ Oct 13| Project Proposals |
 Oct 25| Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | [HW4](../assignments/hw4) | 
 Oct 27| Characters and Strings | Effective C Ch. 7 | 
 **Week 8** ||
-Nov 01| Input/Output | Effective C Ch. 8  | [HW5](../assignments/hw5)
-Nov 03| Preprocessor | Effective C Ch. 9| 
+Nov 01| Self-referential Structures| [DiS Ch. 2.5 - 2.7](https://diveintosystems.org/book/C2-C_depth/arrays.html) | [HW5](../assignments/hw5)
+Nov 03| Input/Output | Effective C Ch. 8  | 
 **Week 9** ||
-Nov 08 | Program Structure | Effective C Ch. 10  | HW6
-Nov 10| Self-referential Structures | 
+Nov 08 | Preprocessor | Effective C Ch. 9 |  [HW6](../assignments/hw6)
+Nov 10| Program Structure | Effective C Ch. 10 | 
 **Week 10** ||
-Nov 15| Advanced git | | HW7
+Nov 15| Advanced git | |  [HW7](../assignments/hw7)
 Nov 17| Compression | 
 **Week 11** ||
 Nov 22| System Calls | 
 Nov 24 | **Thanksgiving Break**
 **Week 12** ||
 Nove 29 | Processes | 
-Dec 01| Interprocess Communication | | HW8
+Dec 01| Interprocess Communication | | [HW8](../assignments/hw8)
 **Week 13** ||
 Dec 06 | Virtual Memory | 
 Dec 08 | Open Source Software

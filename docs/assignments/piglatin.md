@@ -107,12 +107,13 @@ Some guidelines you should follow when working on your solution:
 
 <ul>
 <li>
-		No word we use in our testing will be longer than 100
-		characters.
+No word we use in our testing will be longer than 100
+characters.
 </li>
+<li>No line will be longer than 1024 characters</li>
 <li>
-		<tt>strcpy</tt>, <tt>strcat</tt>, <tt>strdup</tt> are useful
-		functions for this assignment.
+<tt>strcpy</tt>, <tt>strcat</tt>, <tt>strdup</tt> are useful
+functions for this assignment.
 </li>
 </ul>
 

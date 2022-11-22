@@ -37,19 +37,19 @@ Oct 27| Characters and Strings | Effective C Ch. 7 |
 Nov 01| Self-referential Structures| [DiS Ch. 2.5 - 2.7](https://diveintosystems.org/book/C2-C_depth/arrays.html) | [HW5](../assignments/hw5)
 Nov 03| Input/Output | Effective C Ch. 8  | 
 **Week 9** ||
-Nov 08 | Preprocessor | Effective C Ch. 9 |  [HW6](../assignments/hw6)
-Nov 10| Program Structure | Effective C Ch. 10 | 
+Nov 08 | No class, sick kids... |  |  [HW6](../assignments/hw6)
+Nov 10| Input/Output |  | 
 **Week 10** ||
 Nov 15| Advanced git | |  [HW7](../assignments/hw7)
-Nov 17| Compression | 
+Nov 17| Compression | Read [HW8](../assignments/hw8) | 
 **Week 11** ||
-Nov 22| System Calls | 
+Nov 22| Open Source Software |  | 
 Nov 24 | **Thanksgiving Break**
 **Week 12** ||
-Nove 29 | Processes | 
-Dec 01| Interprocess Communication | | [HW8](../assignments/hw8)
+Nove 29 | System Calls | DiS 13.0 - 13.1|
+Dec 01|  Processes | DiS 13.2 | [HW8](../assignments/hw8)
 **Week 13** ||
-Dec 06 | Virtual Memory | 
-Dec 08 | Open Source Software
+Dec 06 | Interprocess Communication | DiS 13.4 |  
+Dec 08 | Virtual Memory | DiS 13.3 | 
 **Week 14** |
 Dec 13 | Buffer Overflows | 

@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-site.title: CSCI 241 - Fall 2022
+site.title: CSCI 241 - Spring 2023
 layout: default
 ---
 
@@ -48,7 +48,7 @@ My goals and objectives for students taking this course are as follows:
 1. Understand the role of C in the field of computing
 1. Understand the interrelationship of C and Unix
 1. Become fluent in C programming including  
-	* Compound data types such as structs and unions
+	* Compound data types such as structs
 	* Dynamically allocated structures (including cleanup)
 	* Binary and bit-wise manipulations
 	* Making system call requests of the OS
@@ -56,7 +56,6 @@ My goals and objectives for students taking this course are as follows:
 1. Learn and regularly use a version control system
 1. Become acquainted with the Unix tool philosophy and some common tools
 1. Be able to write a Unix tool
-1. Be able to compose Unix tools into shell scripts
 1. Explain information presented in mathematical forms and/or within a formal reasoning system.
 1. Translate information into a formal system or mathematical model; translate real world phenomena into formal/mathematical symbols.
 1. Use formal reasoning/mathematical methods, tools, technology, and calculation to solve problems.

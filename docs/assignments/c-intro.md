@@ -9,7 +9,7 @@ title: hw2
 ---
 
 # CSCI 241 - Homework 2 - Introduction to C
-Due by 11:59.59pm Tuesday, September 27
+Due by 11:59.59pm Tuesday, February 14
 
 
 For this assignment you will be:

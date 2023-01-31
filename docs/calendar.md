@@ -21,27 +21,27 @@ Feb 09 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sectio
 Feb 14 | Introduction to C and Compilation |Effective C Ch. 1 |[HW1](assignments/unix-intro.md)|
 Feb 16 | Makefiles | <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-intro">A short introduction to Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-variables">Variables in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-implicit-rules">Implicit rules in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-standard-targets">Standard targets in Makefiles</a> ||
 **Week 4** |||
-Feb 21 | Objects, Functions, and Types | Effective C Ch. 2 |[HW2](../assignments/hw2)|
+Feb 21 | Objects, Functions, and Types | Effective C Ch. 2 | HW2
 Feb 23 | Arithmetic Types | Effective C Ch. 3<br/> Dis Ch. 4.1 - 4.6 |
 **Week 5** ||
-Feb 28 | Expressions and Operators | Effective C Ch. 4 | [HW3](../assignments/hw3) |
+Feb 28 | Expressions and Operators | Effective C Ch. 4 | HW3
 Mar 02 | Control Flow | Effective C Ch. 5 | 
 **Week 6** ||
 Mar 07| Dynamically Allocated Memory | Effective C Ch. 6 | 
-Mar 09 | Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | [HW4](../assignments/hw4) | 
+Mar 09 | Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | HW4
 **Week 7** ||
 Mar 14 | Project Proposals | 
 Mar 16 | No class (RJH at SIGCSE) | |
 **Fall Break** || 
 **Week 8** ||
 Mar 28 | Characters and Strings | Effective C Ch. 7 | 
-Mar 30 | Self-referential Structures| [DiS Ch. 2.5 - 2.7](https://diveintosystems.org/book/C2-C_depth/arrays.html) | [HW5](../assignments/hw5)
+Mar 30 | Self-referential Structures| [DiS Ch. 2.5 - 2.7](https://diveintosystems.org/book/C2-C_depth/arrays.html) | HW5
 **Week 9** ||
-Apr 04 | Input/Output | Effective C Ch. 8 |  [HW6](../assignments/hw6)
+Apr 04 | Input/Output | Effective C Ch. 8 |  HW6
 Apr 06 | Input/Output |  | 
 **Week 10** ||
-Apr 11 | Advanced git | |  [HW7](../assignments/hw7)
-Apr 13 | Compression | Read [HW8](../assignments/hw8) | 
+Apr 11 | Advanced git | |  HW8
+Apr 13 | Compression | Read HW8
 **Week 11** ||
 Apr 18 | Open Source Software |  | 
 Apr 20 | System Calls | DiS 13.0 - 13.1|
@@ -49,7 +49,7 @@ Apr 20 | System Calls | DiS 13.0 - 13.1|
 Apr 25 |  No Class (RJH at SIGCHI) | | 
 Apr 27 |  No Class (RJH at SIGCHI) | | 
 **Week 13** ||
-May 02|  Processes | DiS 13.2 | [HW8](../assignments/hw8)
+May 02|  Processes | DiS 13.2 | HW8
 May 04 | Interprocess Communication | DiS 13.4 |   
 **Week 14** |
 May 09 | Virtual Memory | DiS 13.3 |  

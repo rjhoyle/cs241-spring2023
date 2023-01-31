@@ -10,7 +10,7 @@ title: hw0
 
 # CSCI 241 - Homework 0
 
-*Due by 11:59.59pm Friday, September 09 or ASAP for late enrollees*
+*Due by 11:59.59pm Friday, February 03 or ASAP for late enrollees*
 
 ## Part 1
 

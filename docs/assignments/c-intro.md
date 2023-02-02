@@ -29,7 +29,7 @@ We're going to start things off nice and simple.  I'll recommend you create a
 that.
 
 
-First off, go to [https://classroom.github.com/a/MrPne5G8](https://classroom.github.com/a/MrPne5G8) and create a repository in the CS 241 organization.
+First off, go to [https://classroom.github.com/a/9IZR3LGY](https://classroom.github.com/a/9IZR3LGY) and create a repository in the CS 241 organization.
 
 Click on the link and head towards the created repository.  It will be called <b>hw02-username</b>
 

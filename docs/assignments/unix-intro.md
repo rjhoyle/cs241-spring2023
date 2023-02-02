@@ -28,7 +28,7 @@ that.
 
 
 
-First off, go to <a href="https://classroom.github.com/a/ZXSX2GEJ">https://classroom.github.com/a/ZXSX2GEJ</a> and create a repository in the CS 241 organization.
+First off, go to <a href="https://classroom.github.com/a/2b3am8dx">https://classroom.github.com/a/2b3am8dx</a> and create a repository in the CS 241 organization.
 
 
 Click on the link and head towards the created repository.  It will be called <b>hw1-username</b>

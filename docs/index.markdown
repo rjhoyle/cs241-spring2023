@@ -6,10 +6,10 @@ site.title: CSCI 241 - Spring 2023
 layout: default
 ---
 
-**Lectures:** | T/Th, 11:00AM -- 12:15PM, King 241
+**Lectures:** | T/Th, 11:00AM -- 12:15PM, King 135/137
 **Instructor:** | Roberto Hoyle (roberto.hoyle@oberlin.edu)
 **Office:** | King 223C
-**Office Hours:** | Tu 15:00 -- 17:00, Weds 10:00 -- 12:00 or by appointment
+**Office Hours:** | Wednesday/Thursday 14:00 -- 16:00 or by appointment
 **Phone:** | x58424
 
 

@@ -9,7 +9,7 @@ title: hw1
 ---
 
 # CSCI 241 - Homework 1 - Unix Introduction
-Due by 11:59.59pm Tuesday, September 20
+Due by 11:59.59pm Tuesday, February 14
 
 
 

@@ -21,7 +21,7 @@ Feb 09 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sectio
 Feb 14 | Introduction to C and Compilation |Effective C Ch. 1 |[HW1](assignments/unix-intro.md)| [Exercise&nbsp;7](exercises/Lecture-07.md)
 Feb 16 | Makefiles | <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-intro">A short introduction to Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-variables">Variables in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-implicit-rules">Implicit rules in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-standard-targets">Standard targets in Makefiles</a> ||
 **Week 4** |||
-Feb 21 | Objects, Functions, and Types | Effective C Ch. 2 | HW2
+Feb 21 | Objects, Functions, and Types | Effective C Ch. 2 | [HW2](assignments/c-intro.md)
 Feb 23 | Arithmetic Types | Effective C Ch. 3<br/> Dis Ch. 4.1 - 4.6 |
 **Week 5** ||
 Feb 28 | Expressions and Operators | Effective C Ch. 4 | HW3

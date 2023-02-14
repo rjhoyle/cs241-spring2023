@@ -18,7 +18,7 @@ Feb 02 | Introduction to UNIX and the shell | Read LCL, Chapters 1-3<br/>Run the
 Feb 07 | UNIX Commands | Read LCL, Chapters 4-8||
 Feb 09 | Version control and git | Read LCL, Chapters 9-11.<br/>Git Book, sections 1.1, 1.3, 1.6, 1.7, 2.1, and 2.2<br /><a href="https://learngitbranching.js.org/">Interactive Git Tutorial</a>||[Exercise&nbsp;2](exercises/Lecture-02.md)<br/>[Exercise&nbsp;3](exercises/Lecture-03.md)<br/>[Exercise&nbsp;4](exercises/Lecture-04.md)
 **Week 3** |||
-Feb 14 | Introduction to C and Compilation |Effective C Ch. 1 |[HW1](assignments/unix-intro.md)|
+Feb 14 | Introduction to C and Compilation |Effective C Ch. 1 |[HW1](assignments/unix-intro.md)| [Exercise&nbsp;7](exercises/Lecture-07.md)
 Feb 16 | Makefiles | <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-intro">A short introduction to Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-variables">Variables in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-implicit-rules">Implicit rules in Make</a><br/> <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make-standard-targets">Standard targets in Makefiles</a> ||
 **Week 4** |||
 Feb 21 | Objects, Functions, and Types | Effective C Ch. 2 | HW2

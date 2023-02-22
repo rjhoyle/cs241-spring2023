@@ -8,7 +8,7 @@ title: hw3
 
 # CSCI 241 - Homework 3: Arrays
 
-<em>Due by 11:59.59pm Wednesday, October 5</em>
+<em>Due by 11:59.59pm Thursday March 02</em>
 
 
 ## Introduction
@@ -26,7 +26,7 @@ via a Makefile, creating header files, etc.
 
 
 
-The URL for the github repository for this account is <a href="https://classroom.github.com/a/C7rS4lkP">https://classroom.github.com/a/C7rS4lkP</a>
+The URL for the github repository for this account is <a href="https://classroom.github.com/a/tZP6yuY5">https://classroom.github.com/a/tZP6yuY5</a>
 
 
 There are starter files for this assignment at <a href="starters/hw3.zip">hw3.zip</a>

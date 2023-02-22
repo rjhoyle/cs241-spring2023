@@ -24,8 +24,8 @@ Feb 16 | Makefiles | <a href="https://rebelsky.cs.grinnell.edu/musings/cnix-make
 Feb 21 | Objects, Functions, and Types | Effective C Ch. 2 | [HW2](assignments/c-intro.md)
 Feb 23 | Arithmetic Types | Effective C Ch. 3<br/> Dis Ch. 4.1 - 4.6 |
 **Week 5** ||
-Feb 28 | Expressions and Operators | Effective C Ch. 4 | HW3
-Mar 02 | Control Flow | Effective C Ch. 5 | 
+Feb 28 | Expressions and Operators | Effective C Ch. 4 |
+Mar 02 | Control Flow | Effective C Ch. 5 |  [HW3](assignments/arrays.md)
 **Week 6** ||
 Mar 07| Dynamically Allocated Memory | Effective C Ch. 6 | 
 Mar 09 | Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | HW4

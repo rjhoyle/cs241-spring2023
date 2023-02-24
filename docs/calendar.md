@@ -28,10 +28,10 @@ Feb 28 | Expressions and Operators | Effective C Ch. 4 |
 Mar 02 | Control Flow | Effective C Ch. 5 |  [HW3](assignments/arrays.md)
 **Week 6** ||
 Mar 07| Dynamically Allocated Memory | Effective C Ch. 6 | 
-Mar 09 | Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | HW4
+Mar 09 | Debugging, Testing, and Analysis | Effective C Ch. 11<br/> DiS Ch. 3.1 - 3.4<br/>21st Century C, Ch. 2  | 
 **Week 7** ||
 Mar 14 | Project Proposals | 
-Mar 16 | No class (RJH at SIGCSE) | |
+Mar 16 | No class (RJH at SIGCSE) | | [HW4](assignments/bits.md)
 **Fall Break** || 
 **Week 8** ||
 Mar 28 | Characters and Strings | Effective C Ch. 7 | 

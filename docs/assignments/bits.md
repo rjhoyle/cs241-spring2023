@@ -10,7 +10,7 @@ title: HW4 - Bits are Bits
 
 # CSCI 241 - Homework 4: Bits are bits
 
-<em>Due by 11:59.59pm Tuesday, October 25</em>
+<em>Due by 11:59.59pm Thursday, March 16</em>
 
 
 ## Introduction
@@ -29,7 +29,7 @@ how your solution works.  You need only submit one assignment per group, but
 clearly indicate your partnership in the README and comments for files.  You should play with collaborating on github as you are doing this.
 
 
-The URL for the github repository for this account is <a href="https://classroom.github.com/a/LD7tDRBS">https://classroom.github.com/a/LD7tDRBS</a>
+The URL for the github repository for this account is <a href="https://classroom.github.com/a/tZP6yuY5">https://classroom.github.com/a/tZP6yuY5</a>
 
 
 

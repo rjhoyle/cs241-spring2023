@@ -10,10 +10,10 @@ title: hw6
 
 # CSCI 241 - Homework 6: Sorting it all out<br>Creating a  Unix tool
 
-**Due by 11:59.59pm Wednesday, November 09**
+**Due by 11:59.59pm Wednesday, April 12th**
 
 
-The Github URL for this assignment is <a href="https://classroom.github.com/a/R4_aKrLy">https://classroom.github.com/a/R4_aKrLy</a> As there are a number of components to this assignment, I'd
+The Github URL for this assignment is <a href="https://classroom.github.com/a/a3Kgxt2x">https://classroom.github.com/a/a3Kgxt2x</a> As there are a number of components to this assignment, I'd
 encourage you to get started before the last minute.
 
 

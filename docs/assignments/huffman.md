@@ -10,7 +10,7 @@ title: hw8
 
 # CSCI 241 - Homework 8: Huffman's Algorithm
 
-**Due by 11:59.59pm, Wednesday, Dec 02**
+**Due by 11:59.59pm, Friday, April 28th**
 
 
 ##  Introduction
@@ -23,7 +23,7 @@ bigger.)
 
 ### Things to note
 <ul class="padded">
-<li>The repository URL for this assignment is <a href="https://classroom.github.com/a/gee6Wfup">https://classroom.github.com/a/gee6Wfup</a></li>
+<li>The repository URL for this assignment is <a href="https://classroom.github.com/a/gTTj5_yV">https://classroom.github.com/a/gTTj5_yV</a></li>
 
 <li>This project is trickier than most. 
 	 <em>Get started on it early!</em> 
@@ -462,8 +462,6 @@ described above.</li>
 <li>Good comments</li>
 
 <li>Runs under valgrind with no errors or warnings</li>
-
-<li>Man pages for each program</li>
 
 <li>A README with the information requested above.  The listing of known
 bugs is important.</li>

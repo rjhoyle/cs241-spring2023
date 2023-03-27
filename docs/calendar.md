@@ -34,23 +34,23 @@ Mar 14 | Project Proposals |
 Mar 16 | No class (RJH at SIGCSE) | | [HW4](assignments/bits.md)
 **Fall Break** || 
 **Week 8** ||
-Mar 28 | Characters and Strings | Effective C Ch. 7 | 
-Mar 30 | Self-referential Structures| [DiS Ch. 2.5 - 2.7](https://diveintosystems.org/book/C2-C_depth/arrays.html) | HW5
+Mar 28 | Characters and Strings | [DiS 2.6](https://diveintosystems.org/book/C2-C_depth/strings.html) | 
+Mar 30 | Self-referential Structures| [DiS Ch. 2.5, 2.7](https://diveintosystems.org/book/C2-C_depth/arrays.html) | 
 **Week 9** ||
-Apr 04 | Input/Output | Effective C Ch. 8 |  HW6
+Apr 04 | Input/Output | Effective C Ch. 8 |  [HW5](assignments/piglatin.md)
 Apr 06 | Input/Output |  | 
 **Week 10** ||
-Apr 11 | Advanced git | |  HW8
-Apr 13 | Compression | Read HW8
+Apr 11 | Advanced git | |  [HW6](assignments/sorting.md)
+Apr 13 | Compression | Read HW8 |
 **Week 11** ||
-Apr 18 | Open Source Software |  | 
+Apr 18 | Open Source Software |  | [HW7](assignments/bignum.md)
 Apr 20 | System Calls | DiS 13.0 - 13.1|
 **Week 12** ||
-Apr 25 |  No Class (RJH at SIGCHI) | | 
-Apr 27 |  No Class (RJH at SIGCHI) | | 
+Apr 25 |  Processes | DiS 13.2 ||
+Apr 27 |  Interprocess Communication | DiS 13.4 |
 **Week 13** ||
-May 02|  Processes | DiS 13.2 | HW8
-May 04 | Interprocess Communication | DiS 13.4 |   
+May 02|  Networking | |
+May 04 | Virtual Memory | DiS 13.3 |  [HW8](assignments/huffman.md)
 **Week 14** |
-May 09 | Virtual Memory | DiS 13.3 |  
+May 09 | TBD
 May 11 | Buffer Overflows | 

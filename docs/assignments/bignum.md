@@ -10,10 +10,10 @@ title: hw7
 
 # CSCI 241 - Homework 7:Add it up!
 
-<em>Due by 11:59.59pm Wednesday Nov. 16</em>
+<em>Due by 11:59.59pm Wednesday, April 19th</em>
 
 
-The GitHub URL for this assignment is <a href="https://classroom.github.com/a/GtrOOv_Q">https://classroom.github.com/a/GtrOOv_Q</a>
+The GitHub URL for this assignment is <a href="https://classroom.github.com/a/UIWrAATL">https://classroom.github.com/a/UIWrAATL</a>
 
 
 ## Introduction

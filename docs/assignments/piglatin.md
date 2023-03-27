@@ -8,9 +8,9 @@ title: hw5
 
 ---
 # CSCI 241 - Lab 5 : Pig Latin
-**Due by 11:59.59pm Wednesday, Nov 02 at 11:59pm**
+**Due by 11:59.59pm Wednesday April 05 at 11:59pm**
 
-The URL for this github repository is <a href="https://classroom.github.com/a/9PePVfUQ">https://classroom.github.com/a/9PePVfUQ</a>  If your partner is submitting an assignment, please submit one yourself, pointing at the partner's repository.
+The URL for this github repository is <a href="https://classroom.github.com/a/HGQ2dkDs">https://classroom.github.com/a/HGQ2dkDs</a>  If your partner is submitting an assignment, please submit one yourself, pointing at the partner's repository.
 
 
 ## Introduction
